@@ -1,1 +1,83 @@
 /* var.css */
+:root {
+    /* 너비 */
+    --width-desk:1920px;
+    --width-container:1380px; /* 콘텐츠 너비 */
+
+    /* 색상 */
+    --color-primary:#ff5c2b; /* 할인 */
+    --color-light:#fff;
+    --color-dark:#000;
+    --color-main-bg:#f8f6f0; /* 메인 배경 */
+    --color-sub-bg:#1d1d1d; /* 헤더, 푸터 배경 */
+    --color-inactive-v1:#888; /* 비활성화 1 */
+    --color-inactive-v2:#999; /* 비활성화2 */
+    --color-inactive-v3:#616161; /* 비활성화3 - 서브 네비 */
+    --color-sub-content:#444; /* 세부내용 */
+    --color-point:#ffc83b; /* 오롤리데이 포인트 노란색 */
+    --color-search-bar:#fff7f5; /* 검색창-검색바 배경 */
+
+    /* 폰트 */
+    --font-size-12:0.75em;
+    --font-size-13:0.813em;
+    --font-size-14:0.875em;
+    --font-size-18:1.125em;
+    --font-size-20:1.25em;
+    --font-size-24:1.5em;
+    --font-size-32:2em;
+
+    /* 폰트 두께 */
+    --font-weight-demilight:300;
+    --font-weight-medium:500;
+    --font-weight-semibold:600;
+
+    /* 행간 */
+    --line-height-md:1.5;
+
+    /* 모서리 둥글기 */
+    --radius-xs:3px;
+    --radius-m:20px;
+    --radius-l:50px;
+
+    /* 간격 */
+    --spacing-6:6px;
+    --spacing-10:10px;
+    --spacing-12:12px;
+    --spacing-14:14px;
+    --spacing-15:15px;
+    --spacing-16:16px;
+    --spacing-18:18px;
+    --spacing-20:20px;
+    --spacing-22:22px;
+    --spacing-24:24px;
+    --spacing-26:26px;
+    --spacing-30:30px;
+    --spacing-40:40px;
+    --spacing-50:50px;
+
+    /* 패딩 */
+    --padding-left-right:0 270px;
+    --padding-lnb:40px 0 80px;
+}
+
+/* 반복 클래스 */
+.flex-row-nowrap {
+    display:flex;
+    flex-flow:row nowrap;
+}
+.flex-col-nowrap {
+    display:flex;
+    flex-flow:column nowrap;
+}
+.flex-row-between-center {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+.flex-row-between-start {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:flex-start;
+}
