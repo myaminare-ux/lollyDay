@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/var.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/responsive.css">
+    <script src="./scripts/best_db.js"></script>
     <script src="./scripts/index.js" defer></script>
     <!--swiper 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -23,174 +24,178 @@
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"/>
 </head>
 <body>
-    <!-- 1행-헤더 -->
-    <header class="flex-row-between-center">
-        <!-- 1-1. 로고 -->
-        <h1><a href="./index.html"><img src="./images/ohLollyDay_black_logo.png" alt="oh, lolly day"></a></h1>
-        <!-- 1-2. 네비 -->
-        <nav>
-            <ul class="gnb flex-row-between-center">
-                <li><a href="#">ALL</a>
-                    <!-- 1-2-1. 서브 네비 컨테이너 -->
-                    <div class="snb_nav_container">
-                        <ul class="lnb flex-row-between-start">
-                            <li>
-                                <p class="category">ALL</p>
-                                <ul class="lnb_list">
-                                    <li><a href="#">전체 상품 보기</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <p class="category">BEST</p>
-                                <ul class="lnb_list">
-                                    <li><a href="#">일일 베스트</a></li>
-                                    <li><a href="#">주간 베스트</a></li>
-                                    <li><a href="#">월간 베스트</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <p class="category">NEW</p>
-                                <ul class="lnb_list">
-                                    <li><a href="#">전체 신상품 보기</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <p class="category">문구</p>
-                                <ul class="lnb_list">
-                                    <li><a href="#">다이어리 & 플래너</a></li>
-                                    <li><a href="#">캘린더</a></li>
-                                    <li><a href="#">노트 & 메모</a></li>
-                                    <li><a href="#">펜 & 펜케이스</a></li>
-                                    <li><a href="#">카드 & 엽서</a></li>
-                                    <li><a href="#">데코레이션</a></li>
-                                    <li><a href="#">파일</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <p class="category">패션</p>
-                                <ul class="lnb_list">
-                                    <li><a href="#">가방</a></li>
-                                    <li><a href="#">파우치</a></li>
-                                    <li><a href="#">악세사리</a></li>
-                                    <li><a href="#">디지털 악세사리</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <p class="category">시그니처</p>
-                                <ul class="lnb_list">
-                                    <li><a href="#">못나니즈</a></li>
-                                    <li><a href="#">팥팥노트</a></li>
-                                    <li><a href="#">해피어라벨 시리즈</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <p class="category">SEASON</p>
-                                <ul class="lnb_list">
-                                    <li><a href="#">계절 추천 아이템</a></li>
-                                    <li><a href="#">독서 추천 아이템</a></li>
-                                    <li><a href="#">하반기 추천 아이템</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <p class="category">GIFT GUIDE</p>
-                                <ul class="lnb_list">
-                                    <li><a href="#">전체 보기</a></li>
-                                    <li><a href="#">1만원 이하</a></li>
-                                    <li><a href="#">2~3만원대</a></li>
-                                    <li><a href="#">4만원 이상</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <p class="category">OUTLET</p>
-                                <ul class="lnb_list">
-                                    <li><a href="#">문구</a></li>
-                                    <li><a href="#">패션/리빙</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <p class="category">BRAND</p>
-                                <ul class="lnb_list">
-                                    <li><a href="#">캠페인</a></li>
-                                    <li><a href="#">프로젝트</a></li>
-                                    <li><a href="#">소확행 리스트</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="#">BEST</a></li>
-                <li><a href="#">NEW</a></li>
-                <li><a href="#">문구</a></li>
-                <li><a href="#">패션</a></li>
-                <li><a href="#">리빙</a></li>
-                <li><a href="#">시그니처</a></li>
-                <li><a href="#">SEASON</a></li>
-                <li><a href="#">GIFT GUIDE</a></li>
-                <li><a href="#">OUTLET</a></li>
-            </ul>
-        </nav>
-        <!-- 1-3. 메뉴(오른쪽) -->
-        <ul class="menu_wrap flex-row-nowrap">
-            <li><a href="#"><img src="./images/search_icon.png" alt="검색하기"></a></li>
-            <li><a href="#"><img src="./images/myPage_icon.png" alt="마이페이지"></a></li>
-            <li><a href="#"><img src="./images/showpping_iocn.png" alt="장바구니"></a></li>
-            <li><a href="#"><img src="./images/favorite_items_icon.png" alt="관심상품"></a></li>
-            <li><a href="#"><img src="./images/globalPage_icon.png" alt="글로벌 사이트"></a></li>
-        </ul>
-    </header>
-    <!-- 2~9행-메인 -->
-    <main>
-        <!-- 2행-메인 광고 배너 -->
-        <section class="main_banner"></section>
-        <!-- 3행-베스트 -->
-        <section class="best">
-            <!-- (오른쪽) 타이틀 랩 -->
-            <div class="best_title_wrap">
-                <!-- 베스트 타이틀 헤더 -->
-                <div class="best_header">
-                    <h2 class="best_title">BEST SELLER</h2>
-                    <p class="best_desc">해피어가 선정한 베스트 셀러를 만나보세요</p>
-                </div>
-                <!-- 카테고리 탭 영역 -->
-                <ul class="best_tab_list">
-                    <li><button type="button" class="tab_btn active">문구</button></li>
-                    <li><button type="button" class="tab_btn">패션</button></li>
-                    <li><button type="button" class="tab_btn">리빙</button></li>
+    <div id="wrap">
+        <!-- 1행-헤더 -->
+        <header class="flex-row-between-center">
+            <!-- 1-1. 로고 -->
+            <h1><a href="./index.html"><img src="./images/ohLollyDay_black_logo.png" alt="oh, lolly day"></a></h1>
+            <!-- 1-2. 네비 -->
+            <nav>
+                <ul class="gnb flex-row-between-center">
+                    <li><a href="#">ALL</a>
+                        <!-- 1-2-1. 서브 네비 컨테이너 -->
+                        <div class="snb_nav_container">
+                            <ul class="lnb flex-row-between-start">
+                                <li>
+                                    <p class="category">ALL</p>
+                                    <ul class="lnb_list">
+                                        <li><a href="#">전체 상품 보기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="category">BEST</p>
+                                    <ul class="lnb_list">
+                                        <li><a href="#">일일 베스트</a></li>
+                                        <li><a href="#">주간 베스트</a></li>
+                                        <li><a href="#">월간 베스트</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="category">NEW</p>
+                                    <ul class="lnb_list">
+                                        <li><a href="#">전체 신상품 보기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="category">문구</p>
+                                    <ul class="lnb_list">
+                                        <li><a href="#">다이어리 & 플래너</a></li>
+                                        <li><a href="#">캘린더</a></li>
+                                        <li><a href="#">노트 & 메모</a></li>
+                                        <li><a href="#">펜 & 펜케이스</a></li>
+                                        <li><a href="#">카드 & 엽서</a></li>
+                                        <li><a href="#">데코레이션</a></li>
+                                        <li><a href="#">파일</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="category">패션</p>
+                                    <ul class="lnb_list">
+                                        <li><a href="#">가방</a></li>
+                                        <li><a href="#">파우치</a></li>
+                                        <li><a href="#">악세사리</a></li>
+                                        <li><a href="#">디지털 악세사리</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="category">시그니처</p>
+                                    <ul class="lnb_list">
+                                        <li><a href="#">못나니즈</a></li>
+                                        <li><a href="#">팥팥노트</a></li>
+                                        <li><a href="#">해피어라벨 시리즈</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="category">SEASON</p>
+                                    <ul class="lnb_list">
+                                        <li><a href="#">계절 추천 아이템</a></li>
+                                        <li><a href="#">독서 추천 아이템</a></li>
+                                        <li><a href="#">하반기 추천 아이템</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="category">GIFT GUIDE</p>
+                                    <ul class="lnb_list">
+                                        <li><a href="#">전체 보기</a></li>
+                                        <li><a href="#">1만원 이하</a></li>
+                                        <li><a href="#">2~3만원대</a></li>
+                                        <li><a href="#">4만원 이상</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="category">OUTLET</p>
+                                    <ul class="lnb_list">
+                                        <li><a href="#">문구</a></li>
+                                        <li><a href="#">패션/리빙</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p class="category">BRAND</p>
+                                    <ul class="lnb_list">
+                                        <li><a href="#">캠페인</a></li>
+                                        <li><a href="#">프로젝트</a></li>
+                                        <li><a href="#">소확행 리스트</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">BEST</a></li>
+                    <li><a href="#">NEW</a></li>
+                    <li><a href="#">문구</a></li>
+                    <li><a href="#">패션</a></li>
+                    <li><a href="#">리빙</a></li>
+                    <li><a href="#">시그니처</a></li>
+                    <li><a href="#">SEASON</a></li>
+                    <li><a href="#">GIFT GUIDE</a></li>
+                    <li><a href="#">OUTLET</a></li>
                 </ul>
-                <!-- 더보기 버튼 -->
-                <a href="#" class="more_btn">MORE<img src="./images/more_icon.png" alt=""></a>
-            </div>
-            <!-- (왼쪽) 상품 스와이퍼 -->
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide best_item1">
-                        <a href="#" target="_blank" class="best_item">
-                            <div class="item_top">
-                                <p class="size_label">A6</p>
-                                <p>상품 이미지는 background 처리</p>
-                                <button type="button" class="favorite_items"><img src="./images/favorite_items_icon.png" alt="관심상품 등록"></button>
-                            </div>
-                            <div class="item_btm">
-                                <h3>내 A6 노트를 보호해 줄 커버</h3>
-                                <del>16,000원</del>
-                                <div class="sale_price">
-                                    <p>5%</p>
-                                    <p>15,200원</p>
-                                </div>
-                            </div>
-                        </a>
+            </nav>
+            <!-- 1-3. 메뉴(오른쪽) -->
+            <ul class="menu_wrap flex-row-nowrap">
+                <li><a href="#"><img src="./images/search_icon.png" alt="검색하기"></a></li>
+                <li><a href="#"><img src="./images/myPage_icon.png" alt="마이페이지"></a></li>
+                <li><a href="#"><img src="./images/showpping_iocn.png" alt="장바구니"></a></li>
+                <li><a href="#"><img src="./images/favorite_items_icon.png" alt="관심상품"></a></li>
+                <li><a href="#"><img src="./images/globalPage_icon.png" alt="글로벌 사이트"></a></li>
+            </ul>
+        </header>
+        <!-- 2~9행-메인 -->
+        <main>
+            <!-- 2행-메인 광고 배너 -->
+            <section class="main_banner"></section>
+            <!-- 3행-베스트 -->
+            <section class="best">
+                <!-- (오른쪽) 타이틀 랩 -->
+                <div class="best_title_wrap">
+                    <!-- 베스트 타이틀 헤더 -->
+                    <div class="best_header">
+                        <h2 class="best_title">BEST SELLER</h2>
+                        <p class="best_desc">해피어가 선정한 베스트 셀러를 만나보세요</p>
                     </div>
+                    <!-- 카테고리 탭 영역 -->
+                    <ul class="best_tab_list flex-col-nowrap">
+                        <li><button type="button" class="tab_btn active">문구</button></li>
+                        <li><button type="button" class="tab_btn">패션</button></li>
+                        <li><button type="button" class="tab_btn">리빙</button></li>
+                    </ul>
+                    <!-- 더보기 버튼 -->
+                    <a href="#" class="more_btn">MORE<img src="./images/more_icon.png" alt=""></a>
                 </div>
-            </div>
-        </section>
-        <!-- 4행-신상품 -->
-        <!-- 5행-시즌 기획전 -->
-        <!-- 6행-선물 추천 -->
-        <!-- 7행-시그니처 -->
-        <!-- 8행-소확행 리스트 -->
-        <!-- 9행-기부 광고 배나 -->
-    </main>
-    <!-- 10행-푸터 -->
-    <footer></footer>
+                <!-- (왼쪽) 상품 스와이퍼 -->
+                <div class="swiper best_item_list">
+                    <div class="swiper-wrapper">
+                        <!-- <div class="swiper-slide best_slide">
+                            <a href="#" target="_blank" class="best_item">
+                                <div class="item_top">
+                                    <span class="size_label">A6</span>
+                                    <img src="./images/best_item1.png" alt="내 A6 노트를 보호해 줄 커버">
+                                </div>
+                                <div class="item_btm">
+                                    <h3>내 A6 노트를 보호해 줄 커버</h3>
+                                    <del class="item_origin_price">16,000원</del>
+                                    <div class="sale_price">
+                                        <p class="sale">5%</p>
+                                        <p class="price">15,200원</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="favorite_btn">
+                                <img src="./images/favorite_items_icon.png" alt="관심상품 등록">
+                            </button>
+                        </div> --><!-- e:best_slide -->
+                    </div><!-- e:swiper-wrapper -->
+                </div><!-- e:best_item_list -->
+            </section><!-- 3행-베스트 끝 -->
+            <!-- 4행-신상품 -->
+            <!-- 5행-시즌 기획전 -->
+            <!-- 6행-선물 추천 -->
+            <!-- 7행-시그니처 -->
+            <!-- 8행-소확행 리스트 -->
+            <!-- 9행-기부 광고 배나 -->
+        </main>
+        <!-- 10행-푸터 -->
+        <footer></footer>
+    </div>
 </body>
 </html>
