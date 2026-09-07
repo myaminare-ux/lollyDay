@@ -30,6 +30,7 @@ const bestDB = [
 },
 ];
 
+// 신상품
 const newDB = [
 {
     id:1,
@@ -63,5 +64,35 @@ const newDB = [
     discount:'5%',
     salePrice:'13,770',
 },
+];
 
+// 시즌 기획전
+const seasonDB = [
+{
+    id:1,
+    subTitle:'공간 분리가 완벽한',
+    title:'레이어 파우치',
+    img:'./images/season_item1.jpg',
+    originPrice:'21,500',
+    discount:'5%',
+    salePrice:'20,420',
+},
+{
+    id:2,
+    subTitle:'새로운 컬러로 다시 돌아온',
+    title:'코듀로이 파우치',
+    img:'./images/season_item2.jpg',
+    originPrice:'14,000',
+    discount:'5%',
+    salePrice:'13,300',
+},
+{
+    id:3,
+    subTitle:'달마다 새로운 기분으로 쓰는',
+    title:'Month 다이어리',
+    img:'./images/season_item3.jpg',
+    originPrice:'5,000',
+    discount:'5%',
+    salePrice:'4,750',
+},
 ];

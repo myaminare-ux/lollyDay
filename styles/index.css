@@ -173,18 +173,37 @@
 }
 #wrap main .new .new_item_list .favorite_btn img {width:100%;}
 /* ---------------------------------------- 5행-시즌 섹션 */
-#wrap main .season {}
+#wrap main .season {width:100%; padding:120px 270px 180px;}
 /* ---------------------------------------- 5-1. (위) 타이틀 헤더 */
 #wrap main .season .season_header {}
 #wrap main .season .season_header .season_title {}
+#wrap main .season .season_header .season_title img {}
 #wrap main .season .season_header .season_desc {}
 /* ---------------------------------------- 5-2. (아래) 상품 */
-#wrap main .season .season_content {}
+#wrap main .season .season_content {width:100%;}
 /* ---------------------------------------- 5-2-1. left */
 #wrap main .season .season_content .season_big_img {}
 #wrap main .season .season_content .season_big_img .img_text {}
 #wrap main .season .season_content .season_big_img .img_text .img_title {}
 #wrap main .season .season_content .season_big_img .img_text .img_desc {}
 /* ---------------------------------------- 5-2-2. right */
+#wrap main .season .season_content .season_item_wrap {flex:1; min-width:0;}
 /* ---------------------------------------- 5-2-2-1. top */
+#wrap main .season .season_content .season_item_wrap .season_banner {}
+#wrap main .season .season_content .season_item_wrap .season_banner img {width:100%;}
 /* ---------------------------------------- 5-2-2-2. btm-상품 스와이퍼 */
+#wrap main .season .season_content .season_item_wrap .season_item_list {width:0;}
+#wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper {}
+#wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide {}
+#wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item {}
+/* ---------------------------------------- 5-2-2-2-1. top-상품 이미지 */
+#wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_top {}
+#wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_top img {}
+/* ---------------------------------------- 5-2-2-2-2. btm-상품 정보 */
+#wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_btm {}
+#wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_btm .sub_title {}
+#wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_btm .h3 {}
+#wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_btm .item_origin_price {}
+#wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_btm .sale_price {}
+#wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_btm .sale_price .sale {}
+#wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_btm .sale_price .price {}

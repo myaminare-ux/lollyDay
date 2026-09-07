@@ -102,3 +102,39 @@ for(let i=0; i<4; i++){
 
     newUl.appendChild(newLi);
 }
+
+// 시즌 기획전
+const season_swiper = document.querySelector('.season_item_list');
+
+for (let i=0; i<3; i++){
+    const season_slide = document.createElement('div');
+    season_slide.classList.add('swiper-slide', 'season_slide');
+    season_slide.innerHTML = `
+    <a href="#" target="_blank" class="season_item">
+        <div class="item_top">
+            <img src="${seasonDB[i].img}" alt="${seasonDB[i].title}">
+        </div>
+        <div class="item_btm">
+            <p class="sub_title">${seasonDB[i].subTitle}</p>
+            <h3>${seasonDB[i].title}</h3>
+            <del class="item_origin_price">${seasonDB[i].originPrice.toLocaleString('ko-KR')}원</del>
+            <div class="sale_price">
+                <p class="sale">${seasonDB[i].discount}</p>
+                <p class="price">${seasonDB[i].salePrice.toLocaleString('ko-KR')}원</p>
+            </div>
+        </div>
+    </a>`;
+    season_swiper.children[0].appendChild(season_slide);
+}
+
+const season_swiper_func = new Swiper(season_swiper, {
+    slidesPerView:3,
+    spaceBetween:10,
+    pagination:{
+        el:'.season_item_list .swiper-pagination',
+        //type:'bullets'(기본)
+        //type:'fraction' (숫자)
+        //type:'progressbar' (바)
+        type:'progressbar',
+    },
+});
