@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./styles/var.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/responsive.css">
-    <script src="./scripts/best_db.js"></script>
+    <script src="./scripts/items_db.js"></script>
     <script src="./scripts/index.js" defer></script>
     <!--swiper 필수 css cdn 연결-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -185,10 +185,92 @@
                             </button>
                         </div> --><!-- e:best_slide -->
                     </div><!-- e:swiper-wrapper -->
+                    <div class="swiper_control_wrap">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
                 </div><!-- e:best_item_list -->
             </section><!-- 3행-베스트 끝 -->
             <!-- 4행-신상품 -->
+            <section class="new flex-col-between-start">
+                <!-- (위) 타이틀 랩 -->
+                <div class="new_title_wrap flex-row-nowrap">
+                    <!-- 신상품 헤더 -->
+                    <div class="new_header">
+                        <h2 class="new_title">NEW ITEM</h2>
+                        <p class="new_desc">오롤리데이의 신상품을 둘러보세요</p>
+                    </div>
+                    <!-- 전체보기 -->
+                    <a href="#" class="new_more_btn flex-row-nowrap">전체보기<img src="./images/more_view_icon.png" alt=""></a>
+                </div>
+                <!-- (아래) 상품 ul, li + 호버 시 이미지 살짝 커지기 -->
+                <ul class="new_item_list flex-row-nowrap">
+                    <!-- <li>
+                        <a href="#" target="_blank" class="new_item">
+                            <div class="item_top">
+                                <img src="./images/new_item1.jpg" alt="">
+                            </div>
+                            <div class="item_btm">
+                                <h3>집 안 기분 좋은 포인트! 못나니즈 사각 쿠션</h3>
+                                <del class="item_origin_price">43,000원</del>
+                                <div class="sale_price">
+                                    <p class="sale">15%</p>
+                                    <p class="price">36,550원</p>
+                                </div>
+                            </div>
+                        </a>
+                        <button type="button" class="favorite_btn">
+                            <img src="./images/favorite_items_icon.png" alt="관심상품 등록">
+                        </button>
+                    </li> -->
+                </ul>
+            </section><!-- 4행-신상품 끝 -->
             <!-- 5행-시즌 기획전 -->
+            <section class="season">
+                <!-- (위) 타이틀 헤더 -->
+                <div class="season_header">
+                    <h2 class="season_title"><img src="./images/fall_season_icon.png" alt="가을 시즌">SEASON</h2>
+                    <p class="season_desc">가을에만 볼 수 있는 한정 아이템이 나왔어요</p>
+                </div>
+                <!-- (아래) 상품 -->
+                <div class="season_content">
+                    <!-- left -->
+                    <a href="#" target="_blank" class="season_big_img">
+                        <!-- background-image로 처리 -->
+                        <div class="img_text">
+                            <h3 class="img_title">가을에 어울리는 아이템</h3>
+                            <p class="img_desc">가을을 만끽할 수 있는 아이템을 추천해드려요</p>
+                        </div>
+                    </a>
+                    <!-- right -->
+                    <div class="season_item_wrap">
+                        <!-- top -->
+                        <a href="#" target="_blank" class="season_banner"><img src="./images/season_banner.jpg" alt="가을맞이 특별 아이템-여러분께 어울리는 아이템을 찾아보세요."></a>
+                        <!-- btm-상품 스와이퍼 -->
+                        <div class="swiper season_item_list">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide season_slide">
+                                    <a href="#" target="_blank" class="season_item">
+                                        <div class="item_top">
+                                            <img src="./images/season_item1.jpg" alt="레이어 파우치">
+                                        </div>
+                                        <div class="item_btm">
+                                            <p class="sub_title">공간 분리가 완벽한</p>
+                                            <h3>레이어 파우치</h3>
+                                            <del class="item_origin_price">21,500원</del>
+                                            <div class="sale_price">
+                                                <p class="sale">5%</p>
+                                                <p class="price">20,420원</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div><!-- e:season_slide -->
+                            </div><!-- e:swiper-wrapper -->
+                        </div><!-- e:season_item_list -->
+                    </div><!-- e:season_item_wrap -->
+                </div><!-- e:season_content -->
+            </section><!-- 5행-시즌 기획전 끝 -->
             <!-- 6행-선물 추천 -->
             <!-- 7행-시그니처 -->
             <!-- 8행-소확행 리스트 -->

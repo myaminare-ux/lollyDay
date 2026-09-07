@@ -21,6 +21,7 @@
     --font-size-12:0.75em;
     --font-size-13:0.813em;
     --font-size-14:0.875em;
+    --font-size-17:1.063em;
     --font-size-18:1.125em;
     --font-size-20:1.25em;
     --font-size-24:1.5em;
@@ -70,6 +71,12 @@
     display:flex;
     flex-flow:column nowrap;
 }
+.flex-col-between-start {
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-between;
+    align-items:flex-start;
+}
 .flex-row-between-center {
     display:flex;
     flex-flow:row nowrap;
@@ -81,4 +88,10 @@
     flex-flow:row nowrap;
     justify-content:space-between;
     align-items:flex-start;
+}
+.flex-row-center {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
 }
