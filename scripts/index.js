@@ -247,3 +247,20 @@ for (let i=0; i<signatureDB.length; i++){
 
 // 소확행 리스트
 const routineList = document.querySelector('.routine_list');
+
+for (let i=0; i<routineDB.length; i++){
+    const data = routineDB[i];
+
+    routineList.innerHTML += `
+    <li>
+        <a href="#">
+            <div class="thumb_img">
+                <img src="${data.img}" alt="${data.title}">
+            </div>
+            <div class="routine_info">
+                <h3 class="routine_info_title">${data.title}</h3>
+                <p class="routine_desc">${data.desc}</p>
+            </div>
+        </a>
+    </li>`;
+};

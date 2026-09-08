@@ -359,3 +359,33 @@
 #wrap main .signa .signa_wrap > li .sub_item_list li .sub_item .item_right .sale_price * {font-weight:var(--font-weight-semibold);}
 #wrap main .signa .signa_wrap > li .sub_item_list li .sub_item .item_right .sale_price .sale {color:var(--color-primary);}
 #wrap main .signa .signa_wrap > li .sub_item_list li .sub_item .item_right .sale_price .price {}
+/* ---------------------------------------- 8행-소확행 리스트 섹션 */
+#wrap main .routine {width:100%; padding:120px 0 120px 0; background-color:var(--color-main-bg);}
+/* ---------------------------------------- 8-1. (위) 타이틀 헤더 */
+#wrap main .routine .routine_title {font-size:var(--font-size-32); font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-40); text-align:center;}
+/* ---------------------------------------- 8-2. (아래) 소확행 랩 */
+#wrap main .routine .routine_wrap {width:100%; align-items:center;}
+/* ---------------------------------------- 8-2-1. left */
+#wrap main .routine .routine_wrap .routine_all {width:950px; margin-right:var(--spacing-20);}
+#wrap main .routine .routine_wrap .routine_all img {width:100%;}
+/* ---------------------------------------- 8-2-2. right */
+#wrap main .routine .routine_wrap .routine_list {gap:var(--spacing-14);}
+#wrap main .routine .routine_wrap .routine_list li {}
+#wrap main .routine .routine_wrap .routine_list li a {display:flex; flex-flow:row nowrap; align-items:center; gap:var(--spacing-20);}
+/* ---------------------------------------- 8-2-2-1. 소확행 왼쪽 이미지 */
+#wrap main .routine .routine_wrap .routine_list li a .thumb_img {width:200px; height:200px;}
+#wrap main .routine .routine_wrap .routine_list li a .thumb_img img {width:100%;}
+/* ---------------------------------------- 8-2-2-2. 소확행 오른쪽 리스트 */
+#wrap main .routine .routine_wrap .routine_list li a .routine_info {}
+#wrap main .routine .routine_wrap .routine_list li a .routine_info .routine_info_title {font-size:var(--font-size-20); font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-10);}
+#wrap main .routine .routine_wrap .routine_list li a .routine_info .routine_desc {/* word-break: keep-all; */ font-size:var(--font-size-14); line-height:var(--line-height-md);}
+/* ---------------------------------------- 9행-기부 광고 배너 섹션 */
+#wrap main .donation_banner {width:100%; padding:60px 270px; background-color:var(--color-point);}
+#wrap main .donation_banner .ad_wrap {}
+/* ---------------------------------------- 9-1. (왼쪽) 기부 광고 내용 */
+#wrap main .donation_banner .ad_wrap .ad_content {}
+#wrap main .donation_banner .ad_wrap .ad_content .ad_title {font-size:var(--font-size-24); font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-14);}
+#wrap main .donation_banner .ad_wrap .ad_content .ad_desc {font-size:var(--font-size-18); line-height:var(--line-height-md);}
+/* ---------------------------------------- 9-2. (오른쪽) 기부 이미지 */
+#wrap main .donation_banner .ad_wrap .ad_img {}
+#wrap main .donation_banner .ad_wrap .ad_img img {width:100%;}

@@ -371,15 +371,17 @@
                 <!-- (위) 타이틀 헤더  -->
                 <h2 class="routine_title">HAPPY ROUTINE</h2>
                 <!-- (아래) 소확행 랩 -->
-                <div class="routine_wrap">
+                <div class="routine_wrap flex-row-nowrap">
                     <!-- left -->
                     <a href="#" class="routine_all"><img src="./images/routine_big.jpg" alt="오롤리데이 소확행 리스트 전체보기"></a>
                     <!-- right -->
-                    <ul class="routine_list">
+                    <ul class="routine_list flex-col-nowrap">
                         <!-- 아래 li는 js에서 반복문 사용 -->
                         <!-- <li>
                             <a href="#">
-                                <div class="thumb_img"><img src="./images/routine_small1.jpg" alt="매일 매일 행복 뽑기"></div>
+                                <div class="thumb_img">
+                                    <img src="./images/routine_small1.jpg" alt="매일 매일 행복 뽑기">
+                                </div>
                                 <div class="routine_info">
                                     <h3 class="routine_info_title">매일 매일 행복 뽑기</h3>
                                     <p class="routine_desc">1DAY 1HAPPY! 오늘은 어떤 행복이 기다리고 있을까요?</p>
@@ -390,6 +392,19 @@
                 </div><!-- e:routine_wrap -->
             </section><!-- 8행-소확행 리스트 끝 -->
             <!-- 9행-기부 광고 배너 -->
+            <section class="donation_banner">
+                <a href="#" class="ad_wrap flex-row-between-center" target="_blank">
+                    <!-- (왼쪽) 기부 광고 내용 -->
+                    <div class="ad_content">
+                        <h2 class="ad_title">더 많은 사람이 행복해질 수 있도록</h2>
+                        <p class="ad_desc">오롤리데이는 #비해피어캠페인의 일환으로,<br>사회에서 소외되고 있는 사람들(보호 대상 아동, 복지의 사각지대에 있는 청소년들)의 자립을 위해,<br>자사몰 매출액의 2%를 초록우산 어린이재단에 지속적으로 기부하고 있습니다.</p>
+                    </div>
+                    <!-- (오른쪽) 기부 이미지 -->
+                    <div class="ad_img">
+                        <img src="./images/donation_ad.png" alt="비해피어캠페인-초록우산 어린이재단 기부">
+                    </div>
+                </a><!-- e:ad_wrap -->
+            </section><!-- 9행-기부 광고 배너 끝 -->
         </main>
         <!-- 10행-푸터 -->
         <footer></footer>

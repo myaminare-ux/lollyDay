@@ -249,4 +249,14 @@ const routineDB = [
     title:'매일 매일 행복 뽑기',
     desc:'1DAY 1HAPPY! 오늘은 어떤 행복이 기다리고 있을까요?',
 },
+{
+    img:'./images/routine_small2.jpg',
+    title:'배경화면 다운받기',
+    desc:'자주 행복해졌으면 하는 마음을 담아, 배경화면을 선물합니다.<br>마구마구 다운 받아 휴대폰 화면을 바라볼 때마다 행복해 주세요!',
+},
+{
+    img:'./images/routine_small3.jpg',
+    title:'행복 인사이트',
+    desc:'“행복을 덕질하는 사람들의 뻔하지 않은 행복 노하우!”<br>다양한 콘텐츠를 만나보세요.',
+},
 ];
