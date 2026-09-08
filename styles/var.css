@@ -14,6 +14,9 @@
     --color-inactive-v2:#999; /* 비활성화2 */
     --color-inactive-v3:#616161; /* 비활성화3 - 서브 네비 */
     --color-sub-content:#444; /* 세부내용 */
+    --color-sub-content-v2:#d8d8d8; /* 세부내용 */
+    --color-scroll-bg:#d9d9d9; /* 스크롤 배경 */
+    --color-scroll-bar:#a5a5a5; /* 스크롤 바 */
     --color-point:#ffc83b; /* 오롤리데이 포인트 노란색 */
     --color-search-bar:#fff7f5; /* 검색창-검색바 배경 */
 
@@ -24,6 +27,7 @@
     --font-size-17:1.063em;
     --font-size-18:1.125em;
     --font-size-20:1.25em;
+    --font-size-22:1.375em;
     --font-size-24:1.5em;
     --font-size-32:2em;
 
@@ -41,6 +45,7 @@
     --radius-l:50px;
 
     /* 간격 */
+    --spacing-4:4px;
     --spacing-6:6px;
     --spacing-10:10px;
     --spacing-12:12px;

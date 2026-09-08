@@ -146,7 +146,7 @@
             <section class="main_banner"></section>
             <!-- 3행-베스트 -->
             <section class="best">
-                <!-- (오른쪽) 타이틀 랩 -->
+                <!-- (왼쪽) 타이틀 랩 -->
                 <div class="best_title_wrap">
                     <!-- 베스트 타이틀 헤더 -->
                     <div class="best_header">
@@ -162,7 +162,7 @@
                     <!-- 더보기 버튼 -->
                     <a href="#" class="more_btn">MORE<img src="./images/more_icon.png" alt=""></a>
                 </div>
-                <!-- (왼쪽) 상품 스와이퍼 -->
+                <!-- (오른쪽) 상품 스와이퍼 -->
                 <div class="swiper best_item_list">
                     <div class="swiper-wrapper">
                         <!-- <div class="swiper-slide best_slide">
@@ -185,7 +185,7 @@
                             </button>
                         </div> --><!-- e:best_slide -->
                     </div><!-- e:swiper-wrapper -->
-                    <div class="swiper_control_wrap">
+                    <div class="swiper_control_wrap flex-row-nowrap">
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-pagination"></div>
                         <div class="swiper-button-next"></div>
@@ -227,22 +227,23 @@
                 </ul>
             </section><!-- 4행-신상품 끝 -->
             <!-- 5행-시즌 기획전 -->
-            <section class="season">
+            <section class="season flex-col-nowrap">
                 <!-- (위) 타이틀 헤더 -->
                 <div class="season_header">
-                    <h2 class="season_title"><img src="./images/fall_season_icon.png" alt="가을 시즌">SEASON</h2>
+                    <h2 class="season_title flex-row-nowrap"><img src="./images/fall_season_icon.png" alt="가을 시즌">SEASON</h2>
                     <p class="season_desc">가을에만 볼 수 있는 한정 아이템이 나왔어요</p>
                 </div>
                 <!-- (아래) 상품 -->
                 <div class="season_content flex-row-nowrap">
                     <!-- left -->
-                    <a href="#" target="_blank" class="season_big_img">
+                    <div class="season_big_img">
                         <!-- background-image로 처리 -->
+                        <a href="#" target="_blank" class="season_more_btn flex-row-nowrap">VIEW MORE<img src="./images/more_view_icon.png" alt=""></a>
                         <div class="img_text">
                             <h3 class="img_title">가을에 어울리는 아이템</h3>
                             <p class="img_desc">가을을 만끽할 수 있는 아이템을 추천해드려요</p>
                         </div>
-                    </a>
+                    </div>
                     <!-- right -->
                     <div class="season_item_wrap flex-col-nowrap">
                         <!-- top -->
@@ -267,13 +268,127 @@
                                     </a>
                                 </div> --><!-- e:season_slide -->
                             </div><!-- e:swiper-wrapper -->
+                            <div class="swiper-pagination"></div>
                         </div><!-- e:season_item_list -->
                     </div><!-- e:season_item_wrap -->
                 </div><!-- e:season_content -->
             </section><!-- 5행-시즌 기획전 끝 -->
             <!-- 6행-선물 추천 -->
+            <section class="gift">
+                <!-- (오른쪽) 타이틀 랩 -->
+                <div class="gift_title_wrap">
+                    <!-- 선물추천 타이틀 헤더 -->
+                    <div class="gift_header">
+                        <h2 class="gift_title flex-row-nowrap">GIFT GUIDE<img src="./images/gift_icon.png" alt="선물 추천"></h2>
+                        <p class="gift_desc">소중한 사람에게 선물해보세요</p>
+                    </div>
+                    <!-- 카테고리 탭 영역 -->
+                    <ul class="gift_tab_list flex-col-nowrap">
+                        <li><button type="button" class="tab_btn active">1만원 이하</button></li>
+                        <li><button type="button" class="tab_btn">2 ~ 3만원대</button></li>
+                        <li><button type="button" class="tab_btn">4만원 이상</button></li>
+                    </ul>
+                    <!-- 더보기 버튼 -->
+                    <a href="#" class="more_btn">MORE<img src="./images/more_icon.png" alt=""></a>
+                </div>
+                <!-- (왼쪽) 상품 스와이퍼 -->
+                <div class="swiper gift_item_list">
+                    <div class="swiper-wrapper">
+                        <!-- <div class="swiper-slide gift_slide">
+                            <a href="#" target="_blank" class="gift_item">
+                                <div class="item_top">
+                                    <img src="./images/gift_item1.png" alt="내 A6 노트를 보호해 줄 커버">
+                                </div>
+                                <div class="item_btm">
+                                    <h3>내 A6 노트를 보호해 줄 커버</h3>
+                                    <del class="item_origin_price">16,000원</del>
+                                    <div class="sale_price">
+                                        <p class="sale">5%</p>
+                                        <p class="price">15,200원</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="favorite_btn">
+                                <img src="./images/favorite_items_icon.png" alt="관심상품 등록">
+                            </button>
+                        </div> --><!-- e:gift_slide -->
+                    </div><!-- e:swiper-wrapper -->
+                    <div class="swiper_control_wrap flex-row-nowrap">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div><!-- e:gift_item_list -->
+            </section><!-- 6행-선물 추천 끝 -->
             <!-- 7행-시그니처 -->
+            <section class="signa">
+                <!-- (위) 타이틀 헤더 -->
+                <div class="signa_header">
+                    <!-- 시그니처 타이틀 랩 -->
+                    <div class="signa_title_wrap">
+                        <h2 class="signa_title">SIGNATURE</h2>
+                        <p class="signa_desc">오롤리데이 찐팬 해피어가 좋아하는 시그니처를 만나보세요</p>
+                    </div>
+                    <!-- 전체보기 -->
+                    <a href="#" class="signa_more_btn flex-row-nowrap">전체보기<img src="./images/more_view_icon.png" alt=""></a>
+                </div>
+                <!-- (아래) 상품 -->
+                <ul class="signa_wrap flex-row-nowrap">
+                    <!-- 아래는 js에서 반복문으로 처리 -->
+                    <!-- 시그니처 카테고리 가로형(못나니즈, 팥팥노트, 해피어라벨 시리즈) -->
+                    <!-- <li>
+                        // 대표 메인 배너, 타이틀
+                        <a href="#" class="signa_banner mnns">
+                            <div class="banner_img">
+                                <img src="./images/sign_mnns_banner.jpg" alt="못나니즈">
+                            </div>
+                            <h3 class="banner_title">못나니즈</h3>
+                            <p class="banner_desc">오롤리데이의 원조, 매력 넘치는 캐릭터 삼총사를 만나보세요!</p>
+                        </a>
+                        // 시그니처 서브 상품
+                        <ul class="sub_item_list">
+                            <li>
+                                <a href="#" class="sub_item">
+                                    <div class="item_left">
+                                        <img src="./images/sign_mnns_item1.jpg" alt="왕크왕귀 못나니즈 납작 얼굴 인형 키링">
+                                    </div>
+                                    <div class="item_right">
+                                        <h3>왕크왕귀 못나니즈 납작 얼굴 인형 키링</h3>
+                                        <del class="item_origin_price">18,000원</del>
+                                        <div class="sale_price">
+                                            <p class="sale">10%</p>
+                                            <p class="price">16,200원</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul> // e:sub_item_list
+                    </li> -->
+                </ul><!-- e:signa_wrap -->
+            </section><!-- 7행-시그니처 끝 -->
             <!-- 8행-소확행 리스트 -->
+            <section class="routine">
+                <!-- (위) 타이틀 헤더  -->
+                <h2 class="routine_title">HAPPY ROUTINE</h2>
+                <!-- (아래) 소확행 랩 -->
+                <div class="routine_wrap">
+                    <!-- left -->
+                    <a href="#" class="routine_all"><img src="./images/routine_big.jpg" alt="오롤리데이 소확행 리스트 전체보기"></a>
+                    <!-- right -->
+                    <ul class="routine_list">
+                        <!-- 아래 li는 js에서 반복문 사용 -->
+                        <!-- <li>
+                            <a href="#">
+                                <div class="thumb_img"><img src="./images/routine_small1.jpg" alt="매일 매일 행복 뽑기"></div>
+                                <div class="routine_info">
+                                    <h3 class="routine_info_title">매일 매일 행복 뽑기</h3>
+                                    <p class="routine_desc">1DAY 1HAPPY! 오늘은 어떤 행복이 기다리고 있을까요?</p>
+                                </div>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div><!-- e:routine_wrap -->
+            </section><!-- 8행-소확행 리스트 끝 -->
             <!-- 9행-기부 광고 배너 -->
         </main>
         <!-- 10행-푸터 -->

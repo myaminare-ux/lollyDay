@@ -2,7 +2,7 @@
 // 베스트
 const best_swiper = document.querySelector('.best_item_list');
 
-for (let i = 0; i<3; i++) {
+for (let i = 0; i<4; i++) {
     // ----------------------------------------------- 클래스 생성
     const best_slide = document.createElement('div');
     // ----------------------------------------------- 클래스 연결
@@ -75,11 +75,11 @@ for(let i=0; i<4; i++){
         </div>
         <div class="item_btm">
             <h3>${newDB[i].title}</h3>
-                <del class="item_origin_price">${newDB[i].originPrice.toLocaleString('ko-KR')}원</del>
-                <div class="sale_price">
-                    <p class="sale">${newDB[i].discount}</p>
-                    <p class="price">${newDB[i].salePrice.toLocaleString('ko-KR')}원</p>
-                </div>
+            <del class="item_origin_price">${newDB[i].originPrice.toLocaleString('ko-KR')}원</del>
+            <div class="sale_price">
+                <p class="sale">${newDB[i].discount}</p>
+                <p class="price">${newDB[i].salePrice.toLocaleString('ko-KR')}원</p>
+            </div>
         </div>
     </a>
     <button type="button" class="favorite_btn">
@@ -106,7 +106,7 @@ for(let i=0; i<4; i++){
 // 시즌 기획전
 const season_swiper = document.querySelector('.season_item_list');
 
-for (let i=0; i<3; i++){
+for (let i=0; i<4; i++){
     const season_slide = document.createElement('div');
     season_slide.classList.add('swiper-slide', 'season_slide');
     season_slide.innerHTML = `
@@ -130,6 +130,7 @@ for (let i=0; i<3; i++){
 const season_swiper_func = new Swiper(season_swiper, {
     slidesPerView:3,
     spaceBetween:10,
+    watchOverflow:false,
     pagination:{
         el:'.season_item_list .swiper-pagination',
         //type:'bullets'(기본)
@@ -138,3 +139,111 @@ const season_swiper_func = new Swiper(season_swiper, {
         type:'progressbar',
     },
 });
+
+// 선물 추천
+const gift_swiper = document.querySelector('.gift_item_list');
+
+for (let i = 0; i<4; i++){
+    // ----------------------------------------------- 클래스 생성
+    const gift_slide = document.createElement('div');
+    // ----------------------------------------------- 클래스 연결
+    gift_slide.classList.add('swiper-slide', 'gift_slide');
+    // ----------------------------------------------- HTML 연결
+    gift_slide.innerHTML = `
+    <a href="#" target="_blank" class="gift_item">
+        <div class="item_top">
+            <img src="${giftDB[i].img}" alt="${giftDB[i].title}">
+        </div>
+        <div class="item_btm">
+            <h3>${giftDB[i].title}</h3>
+            <del class="item_origin_price">${giftDB[i].originPrice.toLocaleString('ko-KR')}원</del>
+            <div class="sale_price">
+                <p class="sale">${giftDB[i].discount}</p>
+                <p class="price">${giftDB[i].salePrice.toLocaleString('ko-KR')}원</p>
+            </div>
+        </div>
+    </a>
+    <button type="button" class="favorite_btn">
+        <img src="./images/favorite_items_icon2.png" alt="관심상품 등록">
+    </button>`;
+
+    // 관심상품 등록 버튼 클릭 시 활성화 이미지 변경
+    const favBtn2 = gift_slide.querySelector('.favorite_btn');
+    const favImg2 = gift_slide.querySelector('.favorite_btn > img');
+    
+    favBtn2.addEventListener('click', (e)=>{
+        e.preventDefault();
+        favBtn2.classList.toggle('active');
+        if(favBtn2.classList.contains('active')){
+            favImg2.src = './images/favorite_items_active_icon.png';
+        } else {
+            favImg2.src = './images/favorite_items_icon2.png';
+        }
+    });
+
+    gift_swiper.children[0].appendChild(gift_slide);
+}
+
+
+const gift_swiper_func = new Swiper(gift_swiper, {
+    slidesPerView:3,
+    spaceBetween:20,
+    observer:true,
+    watchOverflow:false,
+    pagination:{
+        el:'.gift_item_list .swiper-pagination',
+        //type:'bullets'(기본)
+        //type:'fraction' (숫자)
+        //type:'progressbar' (바)
+        type:'fraction',
+    },
+    navigation:{
+        nextEl:'.gift_item_list .swiper-button-next',
+        prevEl:'.gift_item_list .swiper-button-prev',
+    },
+});
+
+// 시그니처
+const signaUl = document.querySelector('.signa_wrap');
+
+for (let i=0; i<signatureDB.length; i++){
+    const category = signatureDB[i];
+
+    const categoryLi = document.createElement('li');
+    categoryLi.innerHTML = `
+    <a href="#" class="signa_banner ${signatureDB[i].categoryClass}">
+        <div class="banner_img">
+            <img src="${signatureDB[i].bannerImg}" alt="${signatureDB[i].bannerTitle}">
+        </div>
+        <h3 class="banner_title">${signatureDB[i].bannerTitle}</h3>
+        <p class="banner_desc">${signatureDB[i].bannerDesc}</p>
+    </a>
+    <ul class="sub_item_list"></ul>`;
+
+    const subItemList = categoryLi.querySelector('.sub_item_list');
+
+    for (let j=0; j<category.items.length; j++){
+        const item = category.items[j];
+
+        subItemList.innerHTML += `
+        <li>
+            <a href="#" class="sub_item">
+                <div class="item_left">
+                    <img src="${item.img}" alt="${item.title}">
+                </div>
+                <div class="item_right">
+                    <h3>${item.title}</h3>
+                    <del class="item_origin_price">${item.originPrice.toLocaleString('ko-KR')}원</del>
+                    <div class="sale_price">
+                        <p class="sale">${item.discount}</p>
+                        <p class="price">${item.salePrice.toLocaleString('ko-KR')}원</p>
+                    </div>
+                </div>
+            </a>
+        </li>`;
+    }
+    signaUl.appendChild(categoryLi);
+}
+
+// 소확행 리스트
+const routineList = document.querySelector('.routine_list');
