@@ -130,6 +130,11 @@ for (let i=0; i<4; i++){
 const season_swiper_func = new Swiper(season_swiper, {
     slidesPerView:3,
     spaceBetween:10,
+    loop:true,
+    autoplay:{
+        delay:3500,
+        disableOnInteraction:false,
+    },
     watchOverflow:false,
     pagination:{
         el:'.season_item_list .swiper-pagination',
@@ -264,3 +269,27 @@ for (let i=0; i<routineDB.length; i++){
         </a>
     </li>`;
 };
+
+// 검색창 추천 리스트
+const recommendList = document.querySelector('.recommend_list');
+
+for (let i=0; i<recommendDB.length; i++){
+    const data = recommendDB[i];
+
+    recommendList.innerHTML += `
+    <li>
+        <a href="${data.url}">${data.title}</a>
+    </li>`;
+};
+
+// 검색창 클릭 시 열고 닫기 버튼 누르면 닫힘
+const searchOpenBtn = document.querySelector('.search_open_btn');
+const searchOpen = document.querySelector('.search_open');
+const searchCloseBtn = document.querySelector('.search_close_btn button');
+
+searchOpenBtn.addEventListener('click',()=>{
+    searchOpen.classList.add('active');
+});
+searchCloseBtn.addEventListener('click',()=>{
+    searchOpen.classList.remove('active');
+});

@@ -51,8 +51,44 @@
 /* ---------------------------------------- 1-3. 메뉴(오른쪽) */
 #wrap header .menu_wrap {gap:var(--spacing-14);}
 #wrap header .menu_wrap li {}
+#wrap header .menu_wrap li .search_open_btn {width:26px; height:26px;}
+#wrap header .menu_wrap li .search_open_btn img {width:100%;}
 #wrap header .menu_wrap li a {width:26px; height:26px;}
 #wrap header .menu_wrap li a img {width:100%;}
+/* ---------------------------------------- 1-4. 검색 오픈 레이어 영역 */
+#wrap header .search_open {
+    position:absolute; left:0; top:100%; width:100%; 
+    background-color:var(--color-light); box-shadow:0 13px 22px 0 rgba(0, 0, 0, 0.07); 
+    padding:30px 270px 100px;
+    opacity:0; visibility:hidden;
+    transition:opacity 0.3s ease, visibility 0.3s ease;
+}
+#wrap header .search_open.active {opacity:1; visibility:visible;}
+#wrap header .search_open .open_container {position:relative; padding-top:var(--spacing-40);}
+/* ---------------------------------------- 1-4-1. 검색창 닫기 버튼 */
+#wrap header .search_open .open_container .search_close_btn {position:absolute; right:0; top:0;}
+#wrap header .search_open .open_container .search_close_btn button {width:26px;}
+#wrap header .search_open .open_container .search_close_btn button img {width:100%;}
+/* ---------------------------------------- 1-4-2. 검색창 입력창 */
+#wrap header .search_open .open_container .search_fom {align-items:center; background-color:var(--color-search-bar); padding:16px 20px; border-radius:var(--radius-xs); margin-bottom:var(--spacing-20);}
+#wrap header .search_open .open_container .search_fom .submit_btn {width:26px; margin-right:var(--spacing-10);}
+#wrap header .search_open .open_container .search_fom .submit_btn img {width:100%;}
+#wrap header .search_open .open_container .search_fom #user_search {background-color:transparent; width:100%;}
+#wrap header .search_open .open_container .search_fom #user_search::placeholder {color:var(--color-inactive-v2);}
+/* ---------------------------------------- 1-4-3. 최근 검색어 */
+#wrap header .search_open .open_container .recent_search {gap:var(--spacing-10); margin-bottom:var(--spacing-15); align-items:center;}
+#wrap header .search_open .open_container .recent_search .title {font-weight:var(--font-weight-medium);}
+#wrap header .search_open .open_container .recent_search .no_data {font-size:var(--font-size-14); color:var(--color-sub-content);}
+/* ---------------------------------------- 1-4-4. 추천 검색어 */
+#wrap header .search_open .open_container .recommend_search {gap:var(--spacing-10); align-items:center;}
+#wrap header .search_open .open_container .recommend_search .title {font-weight:var(--font-weight-medium); line-height:1; margin-bottom:2px;}
+#wrap header .search_open .open_container .recommend_search .recommend_list {display:flex; flex-flow:row wrap; gap:var(--spacing-6);}
+#wrap header .search_open .open_container .recommend_search .recommend_list li {
+    padding:6px 10px; background-color:var(--color-main-bg); 
+    border:1.5px solid var(--color-point); border-radius:var(--radius-m);
+    display:flex; flex-flow:row nowrap; align-items:center;
+}
+#wrap header .search_open .open_container .recommend_search .recommend_list li a {font-size:var(--font-size-12); text-align:center;}
 /* ---------------------------------------- 2행-메인 광고 배너 */
 #wrap main .main_banner {
     background-image:url(../images/main_banner.jpg);
@@ -384,8 +420,52 @@
 #wrap main .donation_banner .ad_wrap {}
 /* ---------------------------------------- 9-1. (왼쪽) 기부 광고 내용 */
 #wrap main .donation_banner .ad_wrap .ad_content {}
-#wrap main .donation_banner .ad_wrap .ad_content .ad_title {font-size:var(--font-size-24); font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-14);}
-#wrap main .donation_banner .ad_wrap .ad_content .ad_desc {font-size:var(--font-size-18); line-height:var(--line-height-md);}
+#wrap main .donation_banner .ad_wrap .ad_content .ad_title {font-size:var(--font-size-22); font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-14);}
+#wrap main .donation_banner .ad_wrap .ad_content .ad_desc {font-size:var(--font-size-16); line-height:var(--line-height-md);}
 /* ---------------------------------------- 9-2. (오른쪽) 기부 이미지 */
 #wrap main .donation_banner .ad_wrap .ad_img {}
 #wrap main .donation_banner .ad_wrap .ad_img img {width:100%;}
+/* ---------------------------------------- 10행-푸터 */
+#wrap footer {width:100%; padding:60px 270px 70px; background-color:var(--color-sub-bg);}
+/* ---------------------------------------- 10-1. (위) 이용약관 등 */
+#wrap footer .foot_menu {gap:var(--spacing-20); margin-bottom:var(--spacing-50);}
+#wrap footer .foot_menu li {}
+#wrap footer .foot_menu li a {color:var(--color-light); font-size:var(--font-size-18); font-weight:var(--font-weight-medium);}
+/* ---------------------------------------- 10-2. (아래) 회사 sns, 행복복지센터, 은행, 회사 정보 */
+#wrap footer .foot_info {}
+/* ---------------------------------------- 10-2-1. 회사 sns */
+#wrap footer .foot_info .com_sns {}
+#wrap footer .foot_info .com_sns * {color:var(--color-light);}
+#wrap footer .foot_info .com_sns .foot_logo {width:80px; margin-bottom:var(--spacing-30);}
+#wrap footer .foot_info .com_sns .foot_logo a {}
+#wrap footer .foot_info .com_sns .foot_logo a img {width:100%;}
+#wrap footer .foot_info .com_sns .copyright {font-size:var(--font-size-13); font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-30);}
+#wrap footer .foot_info .com_sns .sns_wrap {width:100%; gap:var(--spacing-15);}
+#wrap footer .foot_info .com_sns .sns_wrap a {display:flex; flex-flow:row nowrap; align-items:center; gap:var(--spacing-6);}
+#wrap footer .foot_info .com_sns .sns_wrap .youtube {}
+#wrap footer .foot_info .com_sns .sns_wrap .youtube img {width:26px;}
+#wrap footer .foot_info .com_sns .sns_wrap .insta {}
+#wrap footer .foot_info .com_sns .sns_wrap .insta img {width:26px;}
+/* ---------------------------------------- 10-2-2. 행복복지센터 */
+#wrap footer .foot_info .cs_center {}
+#wrap footer .foot_info .cs_center * {color:var(--color-light);}
+#wrap footer .foot_info .cs_center .cs_title {font-weight:var(--font-weight-semibold); margin-bottom:var(--spacing-20);}
+#wrap footer .foot_info .cs_center .cs_wrap {gap:var(--spacing-40); height:100%;}
+#wrap footer .foot_info .cs_center .cs_wrap .cs_list {display:flex; flex-flow:column nowrap; gap:var(--spacing-20);}
+#wrap footer .foot_info .cs_center .cs_wrap .cs_list li {}
+#wrap footer .foot_info .cs_center .cs_wrap .cs_list li a {font-size:var(--font-size-14);}
+/* ---------------------------------------- 10-2-3. 은행 */
+#wrap footer .foot_info .bank {}
+#wrap footer .foot_info .bank * {color:var(--color-light);}
+#wrap footer .foot_info .bank .bank_title {font-weight:var(--font-weight-semibold); margin-bottom:var(--spacing-20);}
+#wrap footer .foot_info .bank .bank_info {gap:var(--spacing-10);}
+#wrap footer .foot_info .bank .bank_info p {font-size:var(--font-size-14);}
+/* ---------------------------------------- 10-2-4. 회사정보 */
+#wrap footer .foot_info .com_info {}
+#wrap footer .foot_info .com_info * {color:var(--color-light);}
+#wrap footer .foot_info .com_info .com_title {font-weight:var(--font-weight-semibold); margin-bottom:var(--spacing-20);}
+#wrap footer .foot_info .com_info address {}
+#wrap footer .foot_info .com_info address .info_top {gap:var(--spacing-10); margin-bottom:var(--spacing-20);}
+#wrap footer .foot_info .com_info address .info_top p {font-size:var(--font-size-14);}
+#wrap footer .foot_info .com_info address .info_btm {gap:var(--spacing-10);}
+#wrap footer .foot_info .com_info address .info_btm p {font-size:var(--font-size-14);}
