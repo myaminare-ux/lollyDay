@@ -1,6 +1,20 @@
 /* index.js */
+
 // 베스트
 const best_swiper = document.querySelector('.best_item_list');
+
+// 베스트 카테고리 탭 활성화/비활성화
+const tabBtn = document.querySelectorAll('.best_tab_list .tab_btn');
+
+tabBtn.forEach((button)=>{
+    button.addEventListener('click',(e)=>{
+        const currentActive = document.querySelector('.best_tab_list .tab_btn.active');
+        if (currentActive){
+            currentActive.classList.remove('active');
+        }
+        e.currentTarget.classList.add('active');
+    });
+});
 
 for (let i = 0; i<4; i++) {
     // ----------------------------------------------- 클래스 생성
@@ -43,7 +57,6 @@ for (let i = 0; i<4; i++) {
 
     best_swiper.children[0].appendChild(best_slide);
 }
-
 
 const best_swiper_func = new Swiper(best_swiper, {
     slidesPerView:3,
@@ -189,7 +202,6 @@ for (let i = 0; i<4; i++){
     gift_swiper.children[0].appendChild(gift_slide);
 }
 
-
 const gift_swiper_func = new Swiper(gift_swiper, {
     slidesPerView:3,
     spaceBetween:20,
@@ -291,6 +303,12 @@ searchOpenBtn.addEventListener('click',()=>{
     searchOpen.classList.add('active');
 });
 searchCloseBtn.addEventListener('click',()=>{
+    searchOpen.classList.remove('active');
+});
+
+// 네비게이션 all 호버 시 검색창 없어지게 하기
+const navAll = document.querySelector('.gnb .gnb_all');
+navAll.addEventListener('mouseenter',()=>{
     searchOpen.classList.remove('active');
 });
 
