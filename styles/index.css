@@ -469,3 +469,9 @@
 #wrap footer .foot_info .com_info address .info_top p {font-size:var(--font-size-14);}
 #wrap footer .foot_info .com_info address .info_btm {gap:var(--spacing-10);}
 #wrap footer .foot_info .com_info address .info_btm p {font-size:var(--font-size-14);}
+/* ---------------------------------------- CTA 버튼 */
+#wrap .quick_btn_wrap {gap:var(--spacing-4); position:fixed; right:80px; bottom:40px;}
+#wrap .quick_btn_wrap .cs_btn {width:90px;}
+#wrap .quick_btn_wrap .cs_btn img {width:100%;}
+#wrap .quick_btn_wrap .top_btn {width:90px;}
+#wrap .quick_btn_wrap .top_btn img {width:100%;}

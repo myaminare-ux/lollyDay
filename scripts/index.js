@@ -293,3 +293,13 @@ searchOpenBtn.addEventListener('click',()=>{
 searchCloseBtn.addEventListener('click',()=>{
     searchOpen.classList.remove('active');
 });
+
+// CTA 버튼
+const topBtn = document.querySelector('.top_btn');
+
+topBtn.addEventListener('click',()=>{
+    window.scrollTo({
+        top:0,
+        behavior:'smooth',
+    });
+});
