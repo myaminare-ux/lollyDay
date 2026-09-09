@@ -1,4 +1,12 @@
 /* best_db.js */
+
+// 메인 광고 배너
+const mainDB = [
+    {id:1, title:'행복에 행복을 더해줄 오롤리데이 아이템', bgImg:'./images/main_banner.jpg', link:'#',},
+    {id:2, title:'시그니처-못나니즈', bgImg:'./images/sign_mnns_banner.jpg', link:'#',},
+    {id:3, title:'시그니처-해피어라벨 시리즈', bgImg:'./images/sign_happy_banner.jpg', link:'#',},
+];
+
 // 베스트
 const bestDB = [
 {

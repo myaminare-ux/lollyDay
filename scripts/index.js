@@ -1,5 +1,33 @@
 /* index.js */
 
+// 메인 광고 배너
+const mainBr_swiper = document.querySelector('.main_br');
+
+for (let i=0; i<mainDB.length; i++) {
+    const data = mainDB[i];
+
+    const mainBr_slide = document.createElement('div');
+    mainBr_slide.classList.add('swiper-slide', 'main_br_slide');
+    mainBr_slide.style.backgroundImage = `url('${data.bgImg}')`;
+    mainBr_slide.innerHTML = `
+    <a href="${data.link}" class="banner_link"></a>`;
+    mainBr_swiper.children[0].appendChild(mainBr_slide);
+}
+
+const mainBr_swiper_func = new Swiper(mainBr_swiper, {
+    slidesPerView:1,
+    loop:true,
+    autoplay:{
+        delay:3500,
+        disableOnInteraction:false,
+    },
+    pagination:{
+        el:'.main_br .swiper-pagination',
+        type:'bullets' // bullets == 점으로 나타남
+    },
+});
+
+
 // 베스트
 const best_swiper = document.querySelector('.best_item_list');
 
@@ -161,6 +189,19 @@ const season_swiper_func = new Swiper(season_swiper, {
 // 선물 추천
 const gift_swiper = document.querySelector('.gift_item_list');
 
+// 선물 추천 카테고리 탭 활성화/비활성화
+const giftTabBtn = document.querySelectorAll('.gift_tab_list .tab_btn');
+
+giftTabBtn.forEach((button)=>{
+    button.addEventListener('click',(e)=>{
+        const currentAction = document.querySelector('.gift_tab_list .tab_btn.active');
+        if (currentAction){
+            currentAction.classList.remove('active');
+        }
+        e.currentTarget.classList.add('active');
+    });
+});
+
 for (let i = 0; i<4; i++){
     // ----------------------------------------------- 클래스 생성
     const gift_slide = document.createElement('div');
@@ -313,7 +354,7 @@ navAll.addEventListener('mouseenter',()=>{
 });
 
 // CTA 버튼
-const topBtn = document.querySelector('.top_btn');
+const topBtn = document.querySelector('.top_btn_png');
 
 topBtn.addEventListener('click',()=>{
     window.scrollTo({

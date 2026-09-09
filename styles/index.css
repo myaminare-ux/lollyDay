@@ -90,13 +90,23 @@
 }
 #wrap header .search_open .open_container .recommend_search .recommend_list li a {font-size:var(--font-size-12); text-align:center;}
 /* ---------------------------------------- 2행-메인 광고 배너 */
-#wrap main .main_banner {
+/* #wrap main .main_banner {
     background-image:url(../images/main_banner.jpg);
     background-size:cover;
     background-position:center -60%;
     background-repeat:no-repeat;
     width:100%; height:850px;
+} */
+#wrap main .main_banner {width:100%;}
+#wrap main .main_banner .main_br {}
+#wrap main .main_banner .main_br .swiper-wrapper {}
+#wrap main .main_banner .main_br .swiper-wrapper .main_br_slide {
+    height:850px; background-size:cover;
+    background-position:center -60%;
+    background-repeat:no-repeat;
 }
+#wrap main .main_banner .main_br .swiper-wrapper .main_br_slide .banner_link {display:block; width:100%; height:100%;}
+#wrap main .main_banner .main_br .swiper-pagination {}
 /* ---------------------------------------- 3행-베스트 섹션 */
 #wrap main .best {
     padding:120px 270px; width:100%;
@@ -116,8 +126,18 @@
 /* ---------------------------------------- 3-1-2. 카테고리 탭 영역 */
 #wrap main .best .best_title_wrap .best_tab_list {margin:50px 0 317px; gap:var(--spacing-30);}
 #wrap main .best .best_title_wrap .best_tab_list li {}
-#wrap main .best .best_title_wrap .best_tab_list li .tab_btn {font-size:var(--font-size-18); color:var(--color-inactive-v1);}
+#wrap main .best .best_title_wrap .best_tab_list li .tab_btn {font-size:var(--font-size-18); color:var(--color-inactive-v1); position:relative;}
+#wrap main .best .best_title_wrap .best_tab_list li .tab_btn::after {
+    content:''; position:absolute; left:0; bottom:-10px;
+    width:130%; height:3px; background-color:var(--color-point);
+    opacity:0; transform-origin:left center; transform:scale(0);
+    transition:opacity 0.4s ease, transform 0.4s ease;
+}
+#wrap main .best .best_title_wrap .best_tab_list li .tab_btn:hover::after {
+    opacity:1; transform:scale(1);
+}
 #wrap main .best .best_title_wrap .best_tab_list li .active {font-size:var(--font-size-20); color:var(--color-dark); font-weight:var(--font-weight-semibold);}
+/* #wrap main .best .best_title_wrap .best_tab_list li .active::after {opacity:1; transform:scale(1);} */
 /* ---------------------------------------- 3-1-3. 더보기 버튼 */
 #wrap main .best .best_title_wrap .more_btn {
     display:flex; justify-content:center; align-items:center;
@@ -313,7 +333,14 @@
 /* ---------------------------------------- 6-1-2. 카테고리 탭 영역 */
 #wrap main .gift .gift_title_wrap .gift_tab_list {margin:50px 0 317px; gap:var(--spacing-30);}
 #wrap main .gift .gift_title_wrap .gift_tab_list li {}
-#wrap main .gift .gift_title_wrap .gift_tab_list li .tab_btn {font-size:var(--font-size-18); color:var(--color-inactive-v1);}
+#wrap main .gift .gift_title_wrap .gift_tab_list li .tab_btn {font-size:var(--font-size-18); color:var(--color-inactive-v1); position:relative;}
+#wrap main .gift .gift_title_wrap .gift_tab_list li .tab_btn::after {
+    content:''; position:absolute; left:0; bottom:-10px;
+    width:130%; height:3px; background-color:var(--color-point);
+    opacity:0; transform-origin:left center; transform:scale(0);
+    transition:opacity 0.4s ease, transform 0.4s ease;
+}
+#wrap main .gift .gift_title_wrap .gift_tab_list li .tab_btn:hover::after {opacity:1; transform:scale(1);}
 #wrap main .gift .gift_title_wrap .gift_tab_list li .active {font-size:var(--font-size-20); color:var(--color-dark); font-weight:var(--font-weight-medium);}
 /* ---------------------------------------- 6-1-3. 더보기 버튼 */
 #wrap main .gift .gift_title_wrap .more_btn {
