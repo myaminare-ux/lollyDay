@@ -18,7 +18,7 @@ const mainBr_swiper_func = new Swiper(mainBr_swiper, {
     slidesPerView:1,
     loop:true,
     autoplay:{
-        delay:3500,
+        delay:5000,
         disableOnInteraction:false,
     },
     pagination:{

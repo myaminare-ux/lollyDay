@@ -103,10 +103,16 @@
 #wrap main .main_banner .main_br .swiper-wrapper .main_br_slide {
     height:850px; background-size:cover;
     background-position:center -60%;
-    background-repeat:no-repeat;
+    background-repeat:no-repeat; height:850px;
 }
 #wrap main .main_banner .main_br .swiper-wrapper .main_br_slide .banner_link {display:block; width:100%; height:100%;}
 #wrap main .main_banner .main_br .swiper-pagination {}
+#wrap main .main_banner .main_br .swiper-pagination-bullet {transition:width 0.5s ease, border-radius 0.5s ease, background-color 0.5s ease;}
+#wrap main .main_banner .main_br .swiper-pagination-bullet-active {
+    background-color:var(--color-light);
+     /* border:2px solid var(--color-dark); */  border-radius:5px;
+    opacity:1; width:45px;
+}
 /* ---------------------------------------- 3행-베스트 섹션 */
 #wrap main .best {
     padding:120px 270px; width:100%;
@@ -152,11 +158,11 @@
     position:absolute; left:0; top:0; z-index:-1;
     width:100%; height:100%;
     background-color:var(--color-dark);
-    transform:scaleX(0); transform-origin:left center; transition:transform 0.7s ease;
+    transform:scaleX(0); transform-origin:left center; transition:transform 0.9s ease;
 }
 #wrap main .best .best_title_wrap .more_btn img {
     width:14px; height:14px;
-    transform:translateY(1px) rotate(0deg); transition:filter 0.7s ease, transform 0.7s ease;
+    transform:translateY(1px) rotate(0deg); transition:filter 0.9s ease, transform 0.9s ease;
 }
 #wrap main .best .best_title_wrap .more_btn:hover::after {transform:scaleX(1);}
 #wrap main .best .best_title_wrap .more_btn:hover {color:var(--color-light);}
@@ -356,11 +362,11 @@
     position:absolute; left:0; top:0; z-index:-1;
     width:100%; height:100%;
     background-color:var(--color-dark);
-    transform:scaleX(0); transform-origin:left center; transition:transform 0.7s ease;
+    transform:scaleX(0); transform-origin:left center; transition:transform 0.9s ease;
 }
 #wrap main .gift .gift_title_wrap .more_btn img {
     width:14px; height:14px;
-    transform:translateY(1px) rotate(0deg); transition:filter 0.7s ease, transform 0.7s ease;
+    transform:translateY(1px) rotate(0deg); transition:filter 0.9s ease, transform 0.9s ease;
 }
 #wrap main .gift .gift_title_wrap .more_btn:hover::after {transform:scaleX(1);}
 #wrap main .gift .gift_title_wrap .more_btn:hover {color:var(--color-light);}
