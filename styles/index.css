@@ -1,17 +1,16 @@
 /* index.css */
 #wrap {
-    max-width:var(--width-desk); min-width:var(--width-container);
+    max-width:var(--width-desk); width:100%;
     margin:0 auto;
 }
 /* ---------------------------------------- 1행-헤더 */
 #wrap header {
-    max-width:var(--width-desk);
-    height:65px;
+    max-width:var(--width-desk); height:65px;
     background-color:var(--color-sub-bg);
-    padding:var(--padding-left-right);
     position:fixed; left:50%; top:0; width:100%; z-index:999;
     transform:translateX(-50%);
 }
+#wrap header .header_wrap {width:var(--width-container); margin:0 auto;}
 /* ---------------------------------------- 1-1. 로고 */
 #wrap header h1 {width:60px; height:62px;}
 #wrap header h1 a {}
@@ -23,6 +22,7 @@
 #wrap header nav .gnb > li a {
     color:var(--color-light);
     font-weight:var(--font-weight-medium);
+    white-space:nowrap;
 }
 #wrap header nav .gnb > li a:hover {color:var(--color-primary);}
 /* ---------------------------------------- 1-2-1. 서브 네비 컨테이너 */
@@ -51,7 +51,7 @@
 }
 #wrap header nav .gnb > li .snb_nav_container .lnb > li .lnb_list > li a:hover {color:var(--color-dark); font-weight:var(--font-weight-medium);}
 /* ---------------------------------------- 1-3. 메뉴(오른쪽) */
-#wrap header .menu_wrap {gap:var(--spacing-14);}
+#wrap header .menu_wrap {gap:var(--spacing-14); flex-shrink:0;}
 #wrap header .menu_wrap li {}
 #wrap header .menu_wrap li .search_open_btn {width:26px; height:26px;}
 #wrap header .menu_wrap li .search_open_btn img {width:100%;}
