@@ -47,7 +47,9 @@
 #wrap header nav .gnb > li .snb_nav_container .lnb > li .lnb_list > li a {
     color:var(--color-inactive-v3);
     font-size:var(--font-size-14);
+    transition:color 0.3s ease, font-weight 0.3s ease;
 }
+#wrap header nav .gnb > li .snb_nav_container .lnb > li .lnb_list > li a:hover {color:var(--color-dark); font-weight:var(--font-weight-medium);}
 /* ---------------------------------------- 1-3. 메뉴(오른쪽) */
 #wrap header .menu_wrap {gap:var(--spacing-14);}
 #wrap header .menu_wrap li {}
@@ -115,7 +117,7 @@
 }
 /* ---------------------------------------- 3행-베스트 섹션 */
 #wrap main .best {
-    padding:120px 270px; width:100%;
+    padding:120px 0; width:var(--width-container); margin:0 auto;
     display:flex; flex-flow:row nowrap; gap:var(--spacing-80);
     justify-content:space-between;
 }
@@ -224,7 +226,8 @@
 }
 #wrap main .best .best_item_list .swiper-wrapper .best_slide .favorite_btn img {width:100%;}
 /* ---------------------------------------- 4행-신상품 섹션 */
-#wrap main .new {width:100%; padding:120px 270px; gap:var(--spacing-20); background-color:var(--color-main-bg);}
+#wrap main .new {background-color:var(--color-main-bg);}
+#wrap main .new .new_wrap {padding:120px 0; width:var(--width-container); margin:0 auto; gap:var(--spacing-20);}
 /* ---------------------------------------- 4-1. (위) 타이틀 랩 */
 #wrap main .new .new_title_wrap {width:100%; justify-content:space-between; align-items:flex-end;}
 /* ---------------------------------------- 4-1-1. 신상품 타이틀 헤더 */
@@ -257,7 +260,7 @@
 }
 #wrap main .new .new_item_list .favorite_btn img {width:100%;}
 /* ---------------------------------------- 5행-시즌 섹션 */
-#wrap main .season {width:100%; padding:120px 270px 160px;}
+#wrap main .season {width:var(--width-container); padding:120px 0 160px; margin:0 auto;}
 /* ---------------------------------------- 5-1. (위) 타이틀 헤더 */
 #wrap main .season .season_header {}
 #wrap main .season .season_header .season_title {font-size:var(--font-size-32); font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-10); align-items:center; gap:var(--spacing-4); margin-bottom:var(--spacing-10);}
@@ -319,11 +322,11 @@
 #wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_btm .sale_price .sale {color:var(--color-primary);}
 #wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_btm .sale_price .price {}
 /* ---------------------------------------- 6행-선물 추천 섹션 */
-#wrap main .gift {
-    padding:120px 270px; width:100%;
+#wrap main .gift {background-color:var(--color-main-bg);}
+#wrap main .gift .gift_wrap {
+    padding:120px 0; width:var(--width-container); margin:0 auto;
     display:flex; flex-flow:row nowrap; gap:var(--spacing-80);
     justify-content:space-between;
-    background-color:var(--color-main-bg);
 }
 /* ---------------------------------------- 6-1. (왼쪽) 타이틀 랩 */
 #wrap main .gift .gift_title_wrap {width:259px;}
@@ -418,7 +421,7 @@
 }
 #wrap main .gift .gift_item_list .swiper-wrapper .gift_slide .favorite_btn img {width:100%;}
 /* ---------------------------------------- 7행-시그니처 섹션 */
-#wrap main .signa {width:100%; padding:120px 270px;}
+#wrap main .signa {width:var(--width-container); padding:120px 0; margin:0 auto;}
 /* ---------------------------------------- 7-1. (위) 타이틀 헤더 */
 #wrap main .signa .signa_header {}
 /* ---------------------------------------- 7-1-1. 시그니처 타이틀 랩 */
@@ -455,28 +458,29 @@
 #wrap main .signa .signa_wrap > li .sub_item_list li .sub_item .item_right .sale_price .sale {color:var(--color-primary);}
 #wrap main .signa .signa_wrap > li .sub_item_list li .sub_item .item_right .sale_price .price {}
 /* ---------------------------------------- 8행-소확행 리스트 섹션 */
-#wrap main .routine {width:100%; padding:120px 0 120px 0; background-color:var(--color-main-bg);}
+#wrap main .routine {background-color:var(--color-main-bg);}
+#wrap main .routine .routine_all_wrap {width:var(--width-container); padding:120px 0 120px 0; margin:0 auto;}
 /* ---------------------------------------- 8-1. (위) 타이틀 헤더 */
 #wrap main .routine .routine_title {font-size:var(--font-size-32); font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-40); text-align:center;}
 /* ---------------------------------------- 8-2. (아래) 소확행 랩 */
 #wrap main .routine .routine_wrap {width:100%; align-items:center;}
 /* ---------------------------------------- 8-2-1. left */
-#wrap main .routine .routine_wrap .routine_all {width:950px; margin-right:var(--spacing-20);}
-#wrap main .routine .routine_wrap .routine_all img {width:100%;}
+#wrap main .routine .routine_wrap .routine_all {width:785px; height:650px; margin-right:var(--spacing-20);}
+#wrap main .routine .routine_wrap .routine_all img {width:100%; height:100%;}
 /* ---------------------------------------- 8-2-2. right */
-#wrap main .routine .routine_wrap .routine_list {gap:var(--spacing-14);}
+#wrap main .routine .routine_wrap .routine_list {gap:var(--spacing-14); width:575px;}
 #wrap main .routine .routine_wrap .routine_list li {}
-#wrap main .routine .routine_wrap .routine_list li a {display:flex; flex-flow:row nowrap; align-items:center; gap:var(--spacing-20);}
+#wrap main .routine .routine_wrap .routine_list li a {display:flex; flex-flow:row nowrap; align-items:center; gap:var(--spacing-20); width:100%;}
 /* ---------------------------------------- 8-2-2-1. 소확행 왼쪽 이미지 */
 #wrap main .routine .routine_wrap .routine_list li a .thumb_img {width:200px; height:200px;}
 #wrap main .routine .routine_wrap .routine_list li a .thumb_img img {width:100%;}
 /* ---------------------------------------- 8-2-2-2. 소확행 오른쪽 리스트 */
 #wrap main .routine .routine_wrap .routine_list li a .routine_info {}
 #wrap main .routine .routine_wrap .routine_list li a .routine_info .routine_info_title {font-size:var(--font-size-20); font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-10);}
-#wrap main .routine .routine_wrap .routine_list li a .routine_info .routine_desc {/* word-break: keep-all; */ font-size:var(--font-size-14); line-height:var(--line-height-md);}
+#wrap main .routine .routine_wrap .routine_list li a .routine_info .routine_desc {word-break: keep-all; font-size:var(--font-size-14); line-height:var(--line-height-md); width:100%;}
 /* ---------------------------------------- 9행-기부 광고 배너 섹션 */
-#wrap main .donation_banner {width:100%; padding:60px 270px; background-color:var(--color-point);}
-#wrap main .donation_banner .ad_wrap {}
+#wrap main .donation_banner {background-color:var(--color-point);}
+#wrap main .donation_banner .ad_wrap {width:var(--width-container); padding:60px 0; margin:0 auto;}
 /* ---------------------------------------- 9-1. (왼쪽) 기부 광고 내용 */
 #wrap main .donation_banner .ad_wrap .ad_content {}
 #wrap main .donation_banner .ad_wrap .ad_content .ad_title {font-size:var(--font-size-22); font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-14);}
@@ -485,7 +489,8 @@
 #wrap main .donation_banner .ad_wrap .ad_img {}
 #wrap main .donation_banner .ad_wrap .ad_img img {width:100%;}
 /* ---------------------------------------- 10행-푸터 */
-#wrap footer {width:100%; padding:60px 270px 70px; background-color:var(--color-sub-bg);}
+#wrap footer {background-color:var(--color-sub-bg);}
+#wrap footer .foot_wrap {width:var(--width-container); padding:60px 0 70px; margin:0 auto;}
 /* ---------------------------------------- 10-1. (위) 이용약관 등 */
 #wrap footer .foot_menu {gap:var(--spacing-20); margin-bottom:var(--spacing-50);}
 #wrap footer .foot_menu li {}
@@ -529,7 +534,7 @@
 #wrap footer .foot_info .com_info address .info_btm {gap:var(--spacing-10);}
 #wrap footer .foot_info .com_info address .info_btm p {font-size:var(--font-size-14);}
 /* ---------------------------------------- CTA 버튼 */
-#wrap .quick_btn_wrap {position:fixed; right:80px; bottom:40px; gap:var(--spacing-16);}
+#wrap .quick_btn_wrap {position:fixed; right:80px; bottom:40px; gap:var(--spacing-16); z-index:999;}
 #wrap .quick_btn_wrap .cs_btn {
     width:70px; height:70px;
     background-color:var(--color-light); border-radius:var(--radius-l); 

@@ -234,38 +234,40 @@
                 </div><!-- e:best_item_list -->
             </section><!-- 3행-베스트 끝 -->
             <!-- 4행-신상품 -->
-            <section class="new flex-col-between-start">
-                <!-- (위) 타이틀 랩 -->
-                <div class="new_title_wrap flex-row-nowrap">
-                    <!-- 신상품 헤더 -->
-                    <div class="new_header">
-                        <h2 class="new_title">NEW ITEM</h2>
-                        <p class="new_desc">오롤리데이의 신상품을 둘러보세요</p>
+            <section class="new">
+                <div class="new_wrap flex-col-between-start">
+                    <!-- (위) 타이틀 랩 -->
+                    <div class="new_title_wrap flex-row-nowrap">
+                        <!-- 신상품 헤더 -->
+                        <div class="new_header">
+                            <h2 class="new_title">NEW ITEM</h2>
+                            <p class="new_desc">오롤리데이의 신상품을 둘러보세요</p>
+                        </div>
+                        <!-- 전체보기 -->
+                        <a href="#" class="new_more_btn flex-row-nowrap">전체보기<img src="./images/more_view_icon.png" alt=""></a>
                     </div>
-                    <!-- 전체보기 -->
-                    <a href="#" class="new_more_btn flex-row-nowrap">전체보기<img src="./images/more_view_icon.png" alt=""></a>
-                </div>
-                <!-- (아래) 상품 ul, li + 호버 시 이미지 살짝 커지기 -->
-                <ul class="new_item_list flex-row-nowrap">
-                    <!-- <li>
-                        <a href="#" target="_blank" class="new_item">
-                            <div class="item_top">
-                                <img src="./images/new_item1.jpg" alt="">
-                            </div>
-                            <div class="item_btm">
-                                <h3>집 안 기분 좋은 포인트! 못나니즈 사각 쿠션</h3>
-                                <del class="item_origin_price">43,000원</del>
-                                <div class="sale_price">
-                                    <p class="sale">15%</p>
-                                    <p class="price">36,550원</p>
+                    <!-- (아래) 상품 ul, li + 호버 시 이미지 살짝 커지기 -->
+                    <ul class="new_item_list flex-row-nowrap">
+                        <!-- <li>
+                            <a href="#" target="_blank" class="new_item">
+                                <div class="item_top">
+                                    <img src="./images/new_item1.jpg" alt="">
                                 </div>
-                            </div>
-                        </a>
-                        <button type="button" class="favorite_btn">
-                            <img src="./images/favorite_items_icon.png" alt="관심상품 등록">
-                        </button>
-                    </li> -->
-                </ul>
+                                <div class="item_btm">
+                                    <h3>집 안 기분 좋은 포인트! 못나니즈 사각 쿠션</h3>
+                                    <del class="item_origin_price">43,000원</del>
+                                    <div class="sale_price">
+                                        <p class="sale">15%</p>
+                                        <p class="price">36,550원</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="favorite_btn">
+                                <img src="./images/favorite_items_icon.png" alt="관심상품 등록">
+                            </button>
+                        </li> -->
+                    </ul>
+                </div>
             </section><!-- 4행-신상품 끝 -->
             <!-- 5행-시즌 기획전 -->
             <section class="season flex-col-nowrap">
@@ -316,50 +318,52 @@
             </section><!-- 5행-시즌 기획전 끝 -->
             <!-- 6행-선물 추천 -->
             <section class="gift">
-                <!-- (오른쪽) 타이틀 랩 -->
-                <div class="gift_title_wrap">
-                    <!-- 선물추천 타이틀 헤더 -->
-                    <div class="gift_header">
-                        <h2 class="gift_title flex-row-nowrap">GIFT GUIDE<img src="./images/gift_icon.png" alt="선물 추천"></h2>
-                        <p class="gift_desc">소중한 사람에게 선물해보세요</p>
+                <div class="gift_wrap">
+                    <!-- (오른쪽) 타이틀 랩 -->
+                    <div class="gift_title_wrap">
+                        <!-- 선물추천 타이틀 헤더 -->
+                        <div class="gift_header">
+                            <h2 class="gift_title flex-row-nowrap">GIFT GUIDE<img src="./images/gift_icon.png" alt="선물 추천"></h2>
+                            <p class="gift_desc">소중한 사람에게 선물해보세요</p>
+                        </div>
+                        <!-- 카테고리 탭 영역 -->
+                        <ul class="gift_tab_list flex-col-nowrap">
+                            <li><button type="button" class="tab_btn active">1만원 이하</button></li>
+                            <li><button type="button" class="tab_btn">2 ~ 3만원대</button></li>
+                            <li><button type="button" class="tab_btn">4만원 이상</button></li>
+                        </ul>
+                        <!-- 더보기 버튼 -->
+                        <a href="#" class="more_btn">MORE<img src="./images/more_icon.png" alt=""></a>
                     </div>
-                    <!-- 카테고리 탭 영역 -->
-                    <ul class="gift_tab_list flex-col-nowrap">
-                        <li><button type="button" class="tab_btn active">1만원 이하</button></li>
-                        <li><button type="button" class="tab_btn">2 ~ 3만원대</button></li>
-                        <li><button type="button" class="tab_btn">4만원 이상</button></li>
-                    </ul>
-                    <!-- 더보기 버튼 -->
-                    <a href="#" class="more_btn">MORE<img src="./images/more_icon.png" alt=""></a>
-                </div>
-                <!-- (왼쪽) 상품 스와이퍼 -->
-                <div class="swiper gift_item_list">
-                    <div class="swiper-wrapper">
-                        <!-- <div class="swiper-slide gift_slide">
-                            <a href="#" target="_blank" class="gift_item">
-                                <div class="item_top">
-                                    <img src="./images/gift_item1.png" alt="내 A6 노트를 보호해 줄 커버">
-                                </div>
-                                <div class="item_btm">
-                                    <h3>내 A6 노트를 보호해 줄 커버</h3>
-                                    <del class="item_origin_price">16,000원</del>
-                                    <div class="sale_price">
-                                        <p class="sale">5%</p>
-                                        <p class="price">15,200원</p>
+                    <!-- (왼쪽) 상품 스와이퍼 -->
+                    <div class="swiper gift_item_list">
+                        <div class="swiper-wrapper">
+                            <!-- <div class="swiper-slide gift_slide">
+                                <a href="#" target="_blank" class="gift_item">
+                                    <div class="item_top">
+                                        <img src="./images/gift_item1.png" alt="내 A6 노트를 보호해 줄 커버">
                                     </div>
-                                </div>
-                            </a>
-                            <button type="button" class="favorite_btn">
-                                <img src="./images/favorite_items_icon.png" alt="관심상품 등록">
-                            </button>
-                        </div> --><!-- e:gift_slide -->
-                    </div><!-- e:swiper-wrapper -->
-                    <div class="swiper_control_wrap flex-row-nowrap">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-                </div><!-- e:gift_item_list -->
+                                    <div class="item_btm">
+                                        <h3>내 A6 노트를 보호해 줄 커버</h3>
+                                        <del class="item_origin_price">16,000원</del>
+                                        <div class="sale_price">
+                                            <p class="sale">5%</p>
+                                            <p class="price">15,200원</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <button type="button" class="favorite_btn">
+                                    <img src="./images/favorite_items_icon.png" alt="관심상품 등록">
+                                </button>
+                            </div> --><!-- e:gift_slide -->
+                        </div><!-- e:swiper-wrapper -->
+                        <div class="swiper_control_wrap flex-row-nowrap">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div><!-- e:gift_item_list -->
+                </div>
             </section><!-- 6행-선물 추천 끝 -->
             <!-- 7행-시그니처 -->
             <section class="signa">
@@ -409,28 +413,30 @@
             </section><!-- 7행-시그니처 끝 -->
             <!-- 8행-소확행 리스트 -->
             <section class="routine">
-                <!-- (위) 타이틀 헤더  -->
-                <h2 class="routine_title">HAPPY ROUTINE</h2>
-                <!-- (아래) 소확행 랩 -->
-                <div class="routine_wrap flex-row-nowrap">
-                    <!-- left -->
-                    <a href="#" class="routine_all"><img src="./images/routine_big.jpg" alt="오롤리데이 소확행 리스트 전체보기"></a>
-                    <!-- right -->
-                    <ul class="routine_list flex-col-nowrap">
-                        <!-- 아래 li는 js에서 반복문 사용 -->
-                        <!-- <li>
-                            <a href="#">
-                                <div class="thumb_img">
-                                    <img src="./images/routine_small1.jpg" alt="매일 매일 행복 뽑기">
-                                </div>
-                                <div class="routine_info">
-                                    <h3 class="routine_info_title">매일 매일 행복 뽑기</h3>
-                                    <p class="routine_desc">1DAY 1HAPPY! 오늘은 어떤 행복이 기다리고 있을까요?</p>
-                                </div>
-                            </a>
-                        </li> -->
-                    </ul>
-                </div><!-- e:routine_wrap -->
+                <div class="routine_all_wrap">
+                    <!-- (위) 타이틀 헤더  -->
+                    <h2 class="routine_title">HAPPY ROUTINE</h2>
+                    <!-- (아래) 소확행 랩 -->
+                    <div class="routine_wrap flex-row-nowrap">
+                        <!-- left -->
+                        <a href="#" class="routine_all"><img src="./images/routine_big.jpg" alt="오롤리데이 소확행 리스트 전체보기"></a>
+                        <!-- right -->
+                        <ul class="routine_list flex-col-nowrap">
+                            <!-- 아래 li는 js에서 반복문 사용 -->
+                            <!-- <li>
+                                <a href="#">
+                                    <div class="thumb_img">
+                                        <img src="./images/routine_small1.jpg" alt="매일 매일 행복 뽑기">
+                                    </div>
+                                    <div class="routine_info">
+                                        <h3 class="routine_info_title">매일 매일 행복 뽑기</h3>
+                                        <p class="routine_desc">1DAY 1HAPPY! 오늘은 어떤 행복이 기다리고 있을까요?</p>
+                                    </div>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div><!-- e:routine_wrap -->
+                </div>
             </section><!-- 8행-소확행 리스트 끝 -->
             <!-- 9행-기부 광고 배너 -->
             <section class="donation_banner">
@@ -448,77 +454,79 @@
             </section><!-- 9행-기부 광고 배너 끝 -->
         </main>
         <!-- 10행-푸터 -->
-        <footer class="flex-col-nowrap">
-            <!-- (위) 이용약관 등 -->
-            <ul class="foot_menu flex-row-nowrap">
-                <li><a href="#">오롤리데이</a></li>
-                <li><a href="#">이용약관</a></li>
-                <li><a href="#">개인정보취급방침</a></li>
-                <li><a href="#">이용안내</a></li>
-                <li><a href="#">교환 · 반품 · 환불</a></li>
-            </ul>
-            <!-- (아래) 회사 sns, 행복복지센터, 은행, 회사 정보  -->
-            <div class="foot_info flex-row-between-start">
-                <!-- 회사 sns -->
-                <div class="com_sns">
-                    <div class="foot_logo">
-                        <a href="index.html">
-                            <img src="./images/ohLollyDay_black_logo.png" alt="oh, lolly day">
-                        </a>
-                    </div>
-                    <p class="copyright">&copy; 2023 Oh, lolly day! All rights reserved.</p>
-                    <div class="sns_wrap flex-row-nowrap">
-                        <a href="https://www.youtube.com/channel/UCgay59pIcwhCHVprFjxXqfA" class="youtube"><img src="./images/youtube_icon.png" alt="">O, LD! TV</a>
-                        <a href="https://www.instagram.com/ohlollyday.official" class="insta"><img src="./images/instagram_icon.png" alt="">INSTAGRAM</a>
-                    </div>
-                </div><!-- e:com_sns -->
-                <!-- 행복복지센터 -->
-                <div class="cs_center">
-                    <h3 class="cs_title">고객 행복센터</h3>
-                    <div class="cs_wrap flex-row-between-start">
-                        <ul class="cs_list">
-                            <li><a href="#">공지사항</a></li>
-                            <li><a href="#">1:1 문의하기</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">상품 Q&A</a></li>
-                        </ul>
-                        <ul class="cs_list">
-                            <li><a href="#">회원가입</a></li>
-                            <li><a href="#">로그인</a></li>
-                            <li><a href="#">마이페이지</a></li>
-                            <li><a href="#">이벤트</a></li>
-                        </ul>
-                        <ul class="cs_list">
-                            <li><a href="#">주문조회</a></li>
-                            <li><a href="#">쿠폰·적립금</a></li>
-                            <li><a href="#">사이트 이용</a></li>
-                        </ul>
-                    </div><!-- e:cs_wrap -->
-                </div><!-- e:cs_center -->
-                <!-- 은행 -->
-                <div class="bank">
-                    <h3 class="bank_title">BANK</h3>
-                    <div class="bank_info flex-col-nowrap">
-                        <p>신한은행 104-012-940950</p>
-                        <p>예금주 : (주)롤리조쓰컴퍼니 박신후</p>
-                    </div>
-                </div><!-- e:bank -->
-                <!-- 회사정보 -->
-                <div class="com_info">
-                    <h3 class="com_title">COMPANY</h3>
-                    <address>
-                        <div class="info_top flex-col-nowrap">
-                            <p>법인명 : (주)롤리조쓰컴퍼니 &nbsp; 대표 : 박신후</p>
-                            <p>주소 : 서울특별시 성동구 성수이로22길 61 (성수동2가) 5층</p>
+        <footer>
+            <div class="foot_wrap flex-col-nowrap">
+                <!-- (위) 이용약관 등 -->
+                <ul class="foot_menu flex-row-nowrap">
+                    <li><a href="#">오롤리데이</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용안내</a></li>
+                    <li><a href="#">교환 · 반품 · 환불</a></li>
+                </ul>
+                <!-- (아래) 회사 sns, 행복복지센터, 은행, 회사 정보  -->
+                <div class="foot_info flex-row-between-start">
+                    <!-- 회사 sns -->
+                    <div class="com_sns">
+                        <div class="foot_logo">
+                            <a href="index.html">
+                                <img src="./images/ohLollyDay_black_logo.png" alt="oh, lolly day">
+                            </a>
                         </div>
-                        <div class="info_btm flex-col-nowrap">
-                            <p>사업자등록번호 : 854-87-01014</p>
-                            <p>통신판매업 신고번호 : 제2020-서울성동-02653호</p>
-                            <p>개인정보 보호책임자 : 박신후</p>
+                        <p class="copyright">&copy; 2023 Oh, lolly day! All rights reserved.</p>
+                        <div class="sns_wrap flex-row-nowrap">
+                            <a href="https://www.youtube.com/channel/UCgay59pIcwhCHVprFjxXqfA" class="youtube"><img src="./images/youtube_icon.png" alt="">O, LD! TV</a>
+                            <a href="https://www.instagram.com/ohlollyday.official" class="insta"><img src="./images/instagram_icon.png" alt="">INSTAGRAM</a>
                         </div>
-                    </address>
-                </div><!-- e:com_info -->
-            </div><!-- e:foot_info -->
+                    </div><!-- e:com_sns -->
+                    <!-- 행복복지센터 -->
+                    <div class="cs_center">
+                        <h3 class="cs_title">고객 행복센터</h3>
+                        <div class="cs_wrap flex-row-between-start">
+                            <ul class="cs_list">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">1:1 문의하기</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">상품 Q&A</a></li>
+                            </ul>
+                            <ul class="cs_list">
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">마이페이지</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                            <ul class="cs_list">
+                                <li><a href="#">주문조회</a></li>
+                                <li><a href="#">쿠폰·적립금</a></li>
+                                <li><a href="#">사이트 이용</a></li>
+                            </ul>
+                        </div><!-- e:cs_wrap -->
+                    </div><!-- e:cs_center -->
+                    <!-- 은행 -->
+                    <div class="bank">
+                        <h3 class="bank_title">BANK</h3>
+                        <div class="bank_info flex-col-nowrap">
+                            <p>신한은행 104-012-940950</p>
+                            <p>예금주 : (주)롤리조쓰컴퍼니 박신후</p>
+                        </div>
+                    </div><!-- e:bank -->
+                    <!-- 회사정보 -->
+                    <div class="com_info">
+                        <h3 class="com_title">COMPANY</h3>
+                        <address>
+                            <div class="info_top flex-col-nowrap">
+                                <p>법인명 : (주)롤리조쓰컴퍼니 &nbsp; 대표 : 박신후</p>
+                                <p>주소 : 서울특별시 성동구 성수이로22길 61 (성수동2가) 5층</p>
+                            </div>
+                            <div class="info_btm flex-col-nowrap">
+                                <p>사업자등록번호 : 854-87-01014</p>
+                                <p>통신판매업 신고번호 : 제2020-서울성동-02653호</p>
+                                <p>개인정보 보호책임자 : 박신후</p>
+                            </div>
+                        </address>
+                    </div><!-- e:com_info -->
+                </div><!-- e:foot_info -->
+            </div>
         </footer>
         <!-- CTA 버튼 -->
         <div class="quick_btn_wrap flex-col-nowrap">
