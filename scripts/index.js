@@ -1,5 +1,45 @@
 /* index.js */
 
+// 모바일용 서브 네비
+const tabMenu = document.querySelector('.tab_menu');
+const tabContent = document.querySelector('.tab_content');
+
+menuDB.forEach((w, i)=>{
+    // active라는 변수의 i가 0일때 active를 주고 아니면 빈 문자열로 둔다(active를 적용하지 않는다).
+    const active = i === 0 ? 'active' : '';
+
+    const menuLi = document.createElement('li');
+    menuLi.className = active;
+    // menuLi에 새로운 속성을 부여(== setAttribute) -> 요소.setAttribute('속성명', 속성에 넣을 값);
+    menuLi.setAttribute('data-tab', w.id);
+    menuLi.innerHTML = `<a href="#">${w.title}</a>`;
+    tabMenu.appendChild(menuLi);
+
+    const subList = w.sub.map(subTitle => `<li><a href="#">${subTitle}</a></li>`).join('');
+
+    const panelDiv = document.createElement('div');
+    panelDiv.id = w.id;
+    panelDiv.className = `sub_panel ${active}`;
+    panelDiv.innerHTML = `
+        <ul>
+            ${subList}
+        </ul>`;
+    tabContent.appendChild(panelDiv);
+})
+
+// 전체 메뉴(햄버거) 클릭 시 모바일 서브 메뉴 등장, 닫기 버튼 클릭 시 서브 메뉴 닫힘
+const mobalieSnbNav = document.querySelector('.mobaile_sub_nav');
+const allMenuBtn = document.querySelector('.all_menu_btn');
+const closeBtn = document.querySelector('.m_sub .close_btn');
+
+allMenuBtn.addEventListener('click', ()=>{
+    mobalieSnbNav.classList.add('active');
+})
+
+closeBtn.addEventListener('click', ()=>{
+    mobalieSnbNav.classList.remove('active');
+})
+
 // 메인 광고 배너
 const mainBr_swiper = document.querySelector('.main_br');
 

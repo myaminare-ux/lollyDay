@@ -1,5 +1,20 @@
 /* best_db.js */
 
+// 모바일용 서브 네비-카테고리 영역
+const menuDB = [
+    {id:'tab1', title:'ALL', sub:['전체 상품 보기']},
+    {id:'tab2', title:'BEST', sub:['일일 베스트', '주간 베스트', '월간 베스트']},
+    {id:'tab3', title:'NEW', sub:['전체 신상품 보기']},
+    {id:'tab4', title:'문구', sub:['다이어리 & 플래너', '캘린더', '노트 & 메모', '펜 & 펜케이스', '카드 & 엽서', '데코레이션', '파일']},
+    {id:'tab5', title:'패션', sub:['가방', '파우치', '악세사리', '디지털 악세사리']},
+    {id:'tab6', title:'리빙', sub:['키친', '포스터', '기타']},
+    {id:'tab7', title:'시그니처', sub:['못나니즈', '팔팔노트', '해피어라벨 시리즈']},
+    {id:'tab8', title:'SEASON', sub:['계절 추천 아이템', '독서 추천 아이템', '하반기 추천 아이템']},
+    {id:'tab9', title:'GIFT GUIDE', sub:['전체보기', '1만원 이하', '2~3만원대', '4만원 이상']},
+    {id:'tab10', title:'OUTLET', sub:['문구', '패션 / 리빙']},
+    {id:'tab11', title:'BRAND', sub:['캠페인', '프로젝트', '소확행 리스트']}
+];
+
 // 메인 광고 배너
 const mainDB = [
     {id:1, title:'행복에 행복을 더해줄 오롤리데이 아이템', bgImg:'./images/main_banner.jpg', link:'#',},

@@ -28,6 +28,11 @@
         <!-- 1행-헤더 -->
         <header>
             <div class="header_wrap flex-row-between-center">
+                <div class="all_menu_btn">
+                    <button type="button">
+                        <img src="./images/all_menu_btn.png" alt="전체 메뉴">
+                    </button>
+                </div>
                 <!-- 1-1. 로고 -->
                 <h1><a href="./index.html"><img src="./images/ohLollyDay_black_logo.png" alt="oh, lolly day"></a></h1>
                 <!-- 1-2. 네비 -->
@@ -172,6 +177,40 @@
                     </div>
                 </div>
             </div>
+            <!-- 0. 모바일용 서브 네비 -->
+            <aside class="mobaile_sub_nav">
+                <div class="m_sub">
+                    <!-- 0-1. 닫기 버튼 -->
+                    <div class="close_btn">
+                        <button type="button">
+                            <img src="./images/close_btn.png" alt="닫기">
+                        </button>
+                    </div><!-- e:close_btn -->
+                    <!-- 0-2. 로그인/회원가입 -->
+                    <div class="user_info">
+                        <div class="info_wrap flex-row-nowrap">
+                            <span class="login_join">로그인 / 회원가입</span>
+                            <img src="./images/more_view_icon2.png" alt="">
+                        </div>
+                        <p class="sub_text">행복한 하루를 즐길 준비 되었나요?</p>
+                    </div><!-- e:user_info -->
+                    <!-- 0-3. 카테고리 탭 -->
+                    <div class="cate_wrap flex-row-nowrap">
+                        <ul class="tab_menu">
+                            <!-- js에서 반복문 사용 -->
+                            <!-- <li class="active"><a href="#">ALL</a></li> -->
+                        </ul>
+                        <div class="tab_content">
+                            <!-- js에서 반복문 사용 -->
+                            <!-- <div class="sub_panel active">
+                                <ul>
+                                    <li><a href="#">전체 상품 보기</a></li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div><!-- e:cate_wrap -->
+                </div><!-- e:m_sub -->
+            </aside><!-- e:mobaile_sub_nav -->
         </header>
         <!-- 2~9행-메인 -->
         <main>

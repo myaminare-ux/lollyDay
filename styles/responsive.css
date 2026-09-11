@@ -1,8 +1,43 @@
 /* responsive.css */
 /* ------------------------------------------------------ 테블릿 */
-@media screen and (max-width:1379px) {
-    /* ---------------------------------------- 1행-헤더 */
-    #wrap header {min-width:auto; max-width:100%; padding:0 24px;}
-    #wrap header .header_wrap {width:100%; margin:0 auto;}
+@media screen and (max-width:1024px) {
+    /* body > #wrap */
+    #wrap {max-width:100%;}
+    /* 1행-헤더 */
+    #wrap header {max-width:100%;}
+    #wrap header .header_wrap {width:100%; padding:0 60px;}
+    /* 1-1. 로고 */
+    #wrap header h1 {width:56px; height:58px;}
+    /* 1-2. 네비 */
+    #wrap header nav .gnb {gap:var(--spacing-20);}
+    #wrap header nav .gnb > li a {font-size:var(--font-size-14);}
+    /* 1-2-1. 서브 네비 컨테이너 */
+    #wrap header nav .gnb > li .snb_nav_container {padding:0 60px;}
+    #wrap header nav .gnb li:nth-child(1):hover .snb_nav_container {height:300px; padding:20px 60px 40px;}
+    #wrap header nav .gnb > li .snb_nav_container .lnb {gap:0;}
+    #wrap header nav .gnb > li .snb_nav_container .lnb > li .category {margin-bottom:var(--spacing-12); font-size:var(--spacing-12);}
+    #wrap header nav .gnb > li .snb_nav_container .lnb > li .lnb_list {display:flex; flex-flow:column nowrap; gap:var(--spacing-14);}
+    #wrap header nav .gnb > li .snb_nav_container .lnb > li .lnb_list > li a {font-size:var(--font-size-10);}
+    /* 1-3. 메뉴 */
+    #wrap header .menu_wrap {gap:var(--spacing-12);}
+    #wrap header .menu_wrap li .search_open_btn {width:24px; height:24px;}
+    #wrap header .menu_wrap li a {width:24px; height:24px;}
 }
 /* ------------------------------------------------------ 모바일 */
+@media screen and (max-width:440px) {
+    /* body > #wrap */
+    /* 1행-헤더 */
+    #wrap header {height:56px;}
+    #wrap header .header_wrap {padding:0 15px; position:relative; height:100%;}
+    /* 0. 모바일용 전체메뉴 */
+    #wrap header .all_menu_btn {display:block;}
+    /* 1-1. 로고 */
+    #wrap header h1 {width:50px; height:52px; position:absolute; left:50%; transform:translateX(-50%);}
+    /* 1-2. 네비 */
+    #wrap header nav {display:none;}
+    /* 1-2-1. 서브 네비 컨테이너 == display : none; */
+    /* 1-3. 메뉴 */
+    #wrap header .menu_wrap {gap:var(--spacing-12);}
+    #wrap header .menu_wrap li .search_open_btn {width:24px; height:24px;}
+    #wrap header .menu_wrap li a {width:24px; height:24px;}
+}

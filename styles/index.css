@@ -11,6 +11,46 @@
     transform:translateX(-50%);
 }
 #wrap header .header_wrap {width:var(--width-container); margin:0 auto;}
+/* ---------------------------------------- 0. 모바일용 전체메뉴 */
+#wrap header .all_menu_btn {width:26px; height:26px; display:none;}
+#wrap header .all_menu_btn button {width:100%; height:100%;}
+#wrap header .all_menu_btn button img {width:100%;}
+/* ---------------------------------------- 0. 모바일용 서브 네비 */
+#wrap header .mobaile_sub_nav {
+    background-color:var(--color-light); padding-top:var(--spacing-20);
+    position:fixed; left:-100%; top:0; width:100%; height:100vh; z-index:999;
+    transition:left 0.3s ease;
+}
+#wrap header .mobaile_sub_nav.active {left:0;}
+#wrap header .mobaile_sub_nav .m_sub {}
+/* ---------------------------------------- 0-1. 닫기 버튼 */
+#wrap header .mobaile_sub_nav .m_sub .close_btn {margin-bottom:var(--spacing-40); padding:0 15px;}
+#wrap header .mobaile_sub_nav .m_sub .close_btn button {width:26px; height:26px;}
+#wrap header .mobaile_sub_nav .m_sub .close_btn button img {width:100%;}
+/* ---------------------------------------- 0-2. 로그인/회원가입 */
+#wrap header .mobaile_sub_nav .m_sub .user_info {padding:0 15px;}
+#wrap header .mobaile_sub_nav .m_sub .user_info .info_wrap {align-items:center; margin-bottom:var(--spacing-10);}
+#wrap header .mobaile_sub_nav .m_sub .user_info .info_wrap .login_join {font-size:var(--font-size-22); font-weight:var(--font-weight-semibold); line-height:1;}
+#wrap header .mobaile_sub_nav .m_sub .user_info .info_wrap img {width:22px;}
+#wrap header .mobaile_sub_nav .m_sub .user_info .sub_text {}
+/* ---------------------------------------- 0-3. 카테고리 탭 */
+#wrap header .mobaile_sub_nav .m_sub .cate_wrap {width:440px;}
+/* ---------------------------------------- 0-3-1. left */
+#wrap header .mobaile_sub_nav .m_sub .cate_wrap .tab_menu {}
+#wrap header .mobaile_sub_nav .m_sub .cate_wrap .tab_menu li {padding:16px 15px;}
+#wrap header .mobaile_sub_nav .m_sub .cate_wrap .tab_menu li a {}
+#wrap header .mobaile_sub_nav .m_sub .cate_wrap .tab_menu .active {}
+#wrap header .mobaile_sub_nav .m_sub .cate_wrap .tab_menu .active a {}
+/* ---------------------------------------- 0-3-2. right */
+#wrap header .mobaile_sub_nav .m_sub .cate_wrap .tab_content {}
+#wrap header .mobaile_sub_nav .m_sub .cate_wrap .tab_content .sub_panel {}
+#wrap header .mobaile_sub_nav .m_sub .cate_wrap .tab_content .sub_panel ul {}
+#wrap header .mobaile_sub_nav .m_sub .cate_wrap .tab_content .sub_panel ul li {width:260px; padding:16px 15px;}
+#wrap header .mobaile_sub_nav .m_sub .cate_wrap .tab_content .sub_panel ul li a {}
+#wrap header .mobaile_sub_nav .m_sub .cate_wrap .tab_content .active {}
+#wrap header .mobaile_sub_nav .m_sub .cate_wrap .tab_content .active ul {}
+#wrap header .mobaile_sub_nav .m_sub .cate_wrap .tab_content .active ul li {}
+#wrap header .mobaile_sub_nav .m_sub .cate_wrap .tab_content .active ul li a {}
 /* ---------------------------------------- 1-1. 로고 */
 #wrap header h1 {width:60px; height:62px;}
 #wrap header h1 a {}
