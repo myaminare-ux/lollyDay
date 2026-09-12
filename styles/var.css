@@ -36,6 +36,7 @@
     --font-weight-demilight:300;
     --font-weight-medium:500;
     --font-weight-semibold:600;
+    --font-weight-bold:700;
 
     /* 행간 */
     --line-height-md:1.5;
@@ -49,6 +50,7 @@
     --spacing-4:4px;
     --spacing-6:6px;
     --spacing-10:10px;
+    --spacing-13:13px;
     --spacing-12:12px;
     --spacing-14:14px;
     --spacing-15:15px;

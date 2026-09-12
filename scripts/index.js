@@ -27,6 +27,22 @@ menuDB.forEach((w, i)=>{
     tabContent.appendChild(panelDiv);
 })
 
+// 모바일용 서브 메뉴의 카테고리 탭 클릭 시 해당 하위 카테고리 리스트가 등장
+tabMenu.addEventListener('click', (e)=>{
+    const targetLi = e.target.closest('li');
+    if(!targetLi) return;
+    e.preventDefault();
+
+    const targetId = targetLi.getAttribute('data-tab');
+
+    tabMenu.querySelectorAll('li').forEach(li => li.classList.remove('active'));
+    targetLi.classList.add('active');
+
+    const targetPanel = document.getElementById(targetId);
+    tabContent.querySelectorAll('.sub_panel').forEach(panel => panel.classList.remove('active'));
+    if(targetPanel){targetPanel.classList.add('active');}
+});
+
 // 전체 메뉴(햄버거) 클릭 시 모바일 서브 메뉴 등장, 닫기 버튼 클릭 시 서브 메뉴 닫힘
 const mobalieSnbNav = document.querySelector('.mobaile_sub_nav');
 const allMenuBtn = document.querySelector('.all_menu_btn');
