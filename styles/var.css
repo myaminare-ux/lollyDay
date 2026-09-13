@@ -25,10 +25,12 @@
     --font-size-12:0.75em;
     --font-size-13:0.813em;
     --font-size-14:0.875em;
+    --font-size-15:0.938em;
     --font-size-17:1.063em;
     --font-size-18:1.125em;
     --font-size-20:1.25em;
     --font-size-22:1.375em;
+    --font-size-23:1.438em;
     --font-size-24:1.5em;
     --font-size-32:2em;
 
@@ -37,6 +39,12 @@
     --font-weight-medium:500;
     --font-weight-semibold:600;
     --font-weight-bold:700;
+
+    /* 자간 */
+    --letter-spacing-nomal:-0.02em;
+    --letter-spacing-xs:-0.06em;
+    --letter-spacing-s:-0.07em;
+    --letter-spacing-ms:-0.08em;
 
     /* 행간 */
     --line-height-md:1.5;
@@ -49,6 +57,7 @@
     /* 간격 */
     --spacing-4:4px;
     --spacing-6:6px;
+    --spacing-8:8px;
     --spacing-10:10px;
     --spacing-13:13px;
     --spacing-12:12px;

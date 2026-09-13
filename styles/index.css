@@ -154,7 +154,7 @@
 #wrap main .main_banner .main_br .swiper-wrapper .main_br_slide {
     height:850px; background-size:cover;
     background-position:center -60%;
-    background-repeat:no-repeat; height:850px;
+    background-repeat:no-repeat;
 }
 #wrap main .main_banner .main_br .swiper-wrapper .main_br_slide .banner_link {display:block; width:100%; height:100%;}
 #wrap main .main_banner .main_br .swiper-pagination {}
@@ -170,7 +170,7 @@
     display:flex; flex-flow:row nowrap; gap:var(--spacing-80);
     justify-content:space-between;
 }
-/* ---------------------------------------- 3-1. (오른쪽) 타이틀 랩 */
+/* ---------------------------------------- 3-1. (왼쪽) 타이틀 랩 */
 #wrap main .best .best_title_wrap {width:259px;}
 /* ---------------------------------------- 3-1-1. 베스트 타이틀 헤더 */
 #wrap main .best .best_title_wrap .best_header {width:100%}
@@ -190,9 +190,7 @@
     opacity:0; transform-origin:left center; transform:scale(0);
     transition:opacity 0.4s ease, transform 0.4s ease;
 }
-#wrap main .best .best_title_wrap .best_tab_list li .tab_btn:hover::after {
-    opacity:1; transform:scale(1);
-}
+#wrap main .best .best_title_wrap .best_tab_list li .tab_btn:hover::after {opacity:1; transform:scale(1);}
 #wrap main .best .best_title_wrap .best_tab_list li .active {font-size:var(--font-size-20); color:var(--color-dark); font-weight:var(--font-weight-semibold);}
 /* #wrap main .best .best_title_wrap .best_tab_list li .active::after {opacity:1; transform:scale(1);} */
 /* ---------------------------------------- 3-1-3. 더보기 버튼 */
@@ -218,7 +216,7 @@
 #wrap main .best .best_title_wrap .more_btn:hover::after {transform:scaleX(1);}
 #wrap main .best .best_title_wrap .more_btn:hover {color:var(--color-light);}
 #wrap main .best .best_title_wrap .more_btn:hover img {filter:invert(1); transform:translateY(1px) rotate(360deg);}
-/* ---------------------------------------- 3-2. (왼쪽) 상품 스와이퍼 */
+/* ---------------------------------------- 3-2. (오른쪽) 상품 스와이퍼 */
 #wrap main .best .best_item_list {flex:1; position:relative; padding-bottom:50px;}
 #wrap main .best .best_item_list .swiper-wrapper {}
 #wrap main .best .best_item_list .swiper-wrapper .best_slide {position:relative;}

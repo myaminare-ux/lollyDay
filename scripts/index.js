@@ -158,6 +158,21 @@ const best_swiper_func = new Swiper(best_swiper, {
         nextEl:'.best_item_list .swiper-button-next',
         prevEl:'.best_item_list .swiper-button-prev',
     },
+
+    breakpoints:{
+        0:{
+            slidesPerView:2,
+            spaceBetween:10,
+        },
+        441:{
+            slidesPerView:3,
+            spaceBetween:10,
+        },
+        1025:{
+            slidesPerView:3,
+            spaceBetween:20,
+        }
+    },
 });
 
 // 신상품
