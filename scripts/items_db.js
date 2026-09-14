@@ -81,7 +81,7 @@ const newDB = [
     salePrice:'16,000',
 },
 {
-    id:1,
+    id:3,
     title:'티켓, 사진을 쏙! 나만의 작은 기억 도서관',
     img:'./images/new_item3.jpg',
     originPrice:'9,000',
@@ -89,12 +89,20 @@ const newDB = [
     salePrice:'8,550',
 },
 {
-    id:1,
+    id:4,
     title:'생활방수 가능한 TPL 스트링 펜 케이스',
     img:'./images/new_item4.jpg',
     originPrice:'14,500',
     discount:'5%',
     salePrice:'13,770',
+},
+{
+    id:5,
+    title:'집 안 기분 좋은 포인트! 못나니즈 사각 쿠션',
+    img:'./images/new_item1.jpg',
+    originPrice:'43,000',
+    discount:'15%',
+    salePrice:'36,550',
 },
 ];
 

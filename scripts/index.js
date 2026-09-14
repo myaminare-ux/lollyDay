@@ -176,11 +176,12 @@ const best_swiper_func = new Swiper(best_swiper, {
 });
 
 // 신상품
-const newUl = document.querySelector('.new_item_list');
+const new_swiper = document.querySelector('.new_item_list');
 
-for(let i=0; i<4; i++){
-    const newLi = document.createElement('li');
-    newLi.innerHTML = `
+for (let i = 0; i<newDB.length; i++) {
+    const new_slide = document.createElement('div');
+    new_slide.classList.add('swiper-slide', 'new_slide');
+    new_slide.innerHTML = `
     <a href="#" target="_blank" class="new_item">
         <div class="item_top">
             <img src="${newDB[i].img}" alt="${newDB[i].title}">
@@ -199,8 +200,8 @@ for(let i=0; i<4; i++){
     </button>`;
 
     // 관심상품 등록 버튼 클릭 시 활성화 이미지 변경
-    const favBtn = newLi.querySelector('.favorite_btn');
-    const favImg = newLi.querySelector('.favorite_btn > img');
+    const favBtn = new_slide.querySelector('.favorite_btn');
+    const favImg = new_slide.querySelector('.favorite_btn > img');
     
     favBtn.addEventListener('click', (e)=>{
         e.preventDefault();
@@ -212,8 +213,42 @@ for(let i=0; i<4; i++){
         }
     });
 
-    newUl.appendChild(newLi);
+    new_swiper.children[0].appendChild(new_slide);
 }
+
+const new_swiper_func = new Swiper(new_swiper, {
+    slidesPerView:4,
+    spaceBetween:20,
+    loop:true,
+    observer:true,
+    watchOverflow:false,
+    // pagination:{
+    //     el:'.best_item_list .swiper-pagination',
+    //     //type:'bullets'(기본)
+    //     //type:'fraction' (숫자)
+    //     //type:'progressbar' (바)
+    //     type:'fraction',
+    // },
+    // navigation:{
+    //     nextEl:'.best_item_list .swiper-button-next',
+    //     prevEl:'.best_item_list .swiper-button-prev',
+    // },
+
+    breakpoints:{
+        0:{
+            slidesPerView:2.7,
+            spaceBetween:10,
+        },
+        441:{
+            slidesPerView:4,
+            spaceBetween:10,
+        },
+        1025:{
+            slidesPerView:4,
+            spaceBetween:20,
+        }
+    },
+});
 
 // 시즌 기획전
 const season_swiper = document.querySelector('.season_item_list');
@@ -254,6 +289,20 @@ const season_swiper_func = new Swiper(season_swiper, {
         //type:'fraction' (숫자)
         //type:'progressbar' (바)
         type:'progressbar',
+    },
+    breakpoints:{
+        0:{
+            slidesPerView:3,
+            spaceBetween:10,
+        },
+        441:{
+            slidesPerView:3,
+            spaceBetween:10,
+        },
+        1025:{
+            slidesPerView:3,
+            spaceBetween:10,
+        }
     },
 });
 
@@ -329,6 +378,20 @@ const gift_swiper_func = new Swiper(gift_swiper, {
     navigation:{
         nextEl:'.gift_item_list .swiper-button-next',
         prevEl:'.gift_item_list .swiper-button-prev',
+    },
+    breakpoints:{
+        0:{
+            slidesPerView:2,
+            spaceBetween:10,
+        },
+        441:{
+            slidesPerView:3,
+            spaceBetween:10,
+        },
+        1025:{
+            slidesPerView:3,
+            spaceBetween:20,
+        }
     },
 });
 
