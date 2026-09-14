@@ -480,7 +480,7 @@
 #wrap main .signa .signa_header .signa_title_wrap .signa_desc {color:var(--color-sub-content); margin-bottom:var(--spacing-20);}
 /* ---------------------------------------- 7-1-2. 전체보기 */
 #wrap main .signa .signa_header .signa_more_btn {justify-content:flex-end; align-items:center; font-size:var(--font-size-14); margin-bottom:var(--spacing-20);}
-#wrap main .signa .signa_header .signa_more_btn img {width:var(--spacing-18);}
+#wrap main .signa .signa_header .signa_more_btn img {width:18px;}
 /* ---------------------------------------- 7-2. (아래) 상품 */
 #wrap main .signa .signa_wrap {width:100%; gap:var(--spacing-24);}
 /* ---------------------------------------- 7-2-1. 시그니처 카테고리 가로형(못나니즈, 팥팥노트, 해피어라벨 시리즈) */
@@ -489,7 +489,7 @@
 #wrap main .signa .signa_wrap > li .signa_banner .banner_img {margin-bottom:var(--spacing-24);}
 #wrap main .signa .signa_wrap > li .signa_banner .banner_img img {width:100%;}
 #wrap main .signa .signa_wrap > li .signa_banner .banner_title {font-size:var(--font-size-22); font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-16);}
-#wrap main .signa .signa_wrap > li .signa_banner .banner_desc {color:var(--color-inactive-v1); margin-bottom:var(--spacing-24);}
+#wrap main .signa .signa_wrap > li .signa_banner .banner_desc {color:var(--color-inactive-v1); margin-bottom:var(--spacing-24); line-height:var(--line-height-m);}
 /* ---------------------------------------- 7-2-2. 시그니처 서브 상품 */
 #wrap main .signa .signa_wrap > li .sub_item_list {display:flex; flex-flow:column nowrap; gap:var(--spacing-12);}
 /* ---------------------------------------- 7-2-2-1. 서브 상품 li */
@@ -527,7 +527,7 @@
 /* ---------------------------------------- 8-2-2-2. 소확행 오른쪽 리스트 */
 #wrap main .routine .routine_wrap .routine_list li a .routine_info {}
 #wrap main .routine .routine_wrap .routine_list li a .routine_info .routine_info_title {font-size:var(--font-size-20); font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-10);}
-#wrap main .routine .routine_wrap .routine_list li a .routine_info .routine_desc {word-break: keep-all; font-size:var(--font-size-14); line-height:var(--line-height-md); width:100%;}
+#wrap main .routine .routine_wrap .routine_list li a .routine_info .routine_desc {word-break:keep-all; font-size:var(--font-size-14); line-height:var(--line-height-md); width:100%;}
 /* ---------------------------------------- 9행-기부 광고 배너 섹션 */
 #wrap main .donation_banner {background-color:var(--color-point);}
 #wrap main .donation_banner .ad_wrap {width:var(--width-container); padding:60px 0; margin:0 auto;}

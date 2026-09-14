@@ -27,6 +27,7 @@
     --font-size-13:0.813em;
     --font-size-14:0.875em;
     --font-size-15:0.938em;
+    --font-size-16:1em;
     --font-size-17:1.063em;
     --font-size-18:1.125em;
     --font-size-20:1.25em;
@@ -43,6 +44,8 @@
 
     /* 자간 */
     --letter-spacing-nomal:-0.02em;
+    --letter-spacing-xxs:-0.03em;
+    --letter-spacing-xxxs:-0.04em;
     --letter-spacing-xs:-0.06em;
     --letter-spacing-s:-0.07em;
     --letter-spacing-ms:-0.08em;
@@ -75,6 +78,7 @@
     --spacing-40:40px;
     --spacing-50:50px;
     --spacing-60:60px;
+    --spacing-70:70px;
     --spacing-80:80px;
 
     /* 패딩 */
