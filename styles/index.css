@@ -260,7 +260,7 @@
 /* ---------------------------------------- 3-2-2. btm */
 #wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_btm {}
 #wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_btm * {}
-#wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_btm h3{font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-14); line-height:var(--line-height-m);}
+#wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_btm h3{font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-8); line-height:var(--line-height-m);}
 #wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_btm .item_origin_price{font-size:var(--font-size-14); color:var(--color-inactive-v1);}
 #wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_btm .sale_price {display:flex; flex-flow:row nowrap; gap:var(--spacing-10); margin-top:14px;}
 #wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_btm .sale_price .sale{font-size:var(--font-size-17); font-weight:var(--font-weight-semibold); color:var(--color-primary);}
@@ -295,7 +295,7 @@
 #wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item .item_top img:hover {transform:scale(1.1);}
 /* ---------------------------------------- 4-2-2. btm */
 #wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item .item_btm {margin-top:var(--spacing-16);}
-#wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item .item_btm h3 {font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-14); line-height:var(--line-height-m);}
+#wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item .item_btm h3 {font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-8); line-height:var(--line-height-m);}
 #wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item .item_btm .item_origin_price {font-size:var(--font-size-14); color:var(--color-inactive-v1);}
 #wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item .item_btm .sale_price {display:flex; flex-flow:row nowrap; gap:var(--spacing-10); margin-top:14px;}
 #wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item .item_btm .sale_price * {font-size:var(--font-size-17);}
@@ -364,7 +364,7 @@
 /* ---------------------------------------- 5-2-2-2-2. btm-상품 정보 */
 #wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_btm {}
 #wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_btm .sub_title {font-size:var(--font-size-12); color:var(--color-inactive-v1); margin-bottom:var(--spacing-6); line-height:var(--line-height-m); word-break:keep-all;}
-#wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_btm h3 {font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-10); line-height:var(--line-height-m);}
+#wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_btm h3 {font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-6); line-height:var(--line-height-m);}
 #wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_btm .item_origin_price {font-size:var(--font-size-14); color:var(--color-inactive-v1);}
 #wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_btm .sale_price {margin-top:var(--spacing-10); display:flex; flex-flow:row nowrap; gap:var(--spacing-10);}
 #wrap main .season .season_content .season_item_wrap .season_item_list .swiper-wrapper .season_slide .season_item .item_btm .sale_price * {font-size:var(--font-size-17); font-weight:var(--font-weight-semibold);}
@@ -457,7 +457,7 @@
 #wrap main .gift .gift_item_list .swiper-wrapper .gift_slide .gift_item .item_top:hover img {transform:scale(1.1);}
 /* ---------------------------------------- 6-2-2. btm */
 #wrap main .gift .gift_item_list .swiper-wrapper .gift_slide .gift_item .item_btm {}
-#wrap main .gift .gift_item_list .swiper-wrapper .gift_slide .gift_item .item_btm h3{font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-14); line-height:var(--line-height-m);}
+#wrap main .gift .gift_item_list .swiper-wrapper .gift_slide .gift_item .item_btm h3{font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-10); line-height:var(--line-height-m);}
 #wrap main .gift .gift_item_list .swiper-wrapper .gift_slide .gift_item .item_btm .item_origin_price{font-size:var(--font-size-14); color:var(--color-inactive-v1);}
 #wrap main .gift .gift_item_list .swiper-wrapper .gift_slide .gift_item .item_btm .sale_price {display:flex; flex-flow:row nowrap; gap:var(--spacing-10); margin-top:14px;}
 #wrap main .gift .gift_item_list .swiper-wrapper .gift_slide .gift_item .item_btm .sale_price * {font-size:var(--font-size-17); font-weight:var(--font-weight-semibold);}
@@ -555,12 +555,13 @@
 #wrap footer .foot_info .com_sns .foot_logo a img {width:100%;}
 #wrap footer .foot_info .com_sns .copyright {font-size:var(--font-size-13); font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-30);}
 #wrap footer .foot_info .com_sns .sns_wrap {width:100%; gap:var(--spacing-15);}
-#wrap footer .foot_info .com_sns .sns_wrap a {display:flex; flex-flow:row nowrap; align-items:center; gap:var(--spacing-6);}
+#wrap footer .foot_info .com_sns .sns_wrap a {display:flex; flex-flow:row nowrap; align-items:center; gap:var(--spacing-6); font-weight:var(--font-weight-medium);}
+#wrap footer .foot_info .com_sns .sns_wrap a img {width:26px;}
 #wrap footer .foot_info .com_sns .sns_wrap .youtube {}
-#wrap footer .foot_info .com_sns .sns_wrap .youtube img {width:26px;}
+#wrap footer .foot_info .com_sns .sns_wrap .youtube img {}
 #wrap footer .foot_info .com_sns .sns_wrap .insta {}
-#wrap footer .foot_info .com_sns .sns_wrap .insta img {width:26px;}
-/* ---------------------------------------- 10-2-2. 행복복지센터 */
+#wrap footer .foot_info .com_sns .sns_wrap .insta img {}
+/* ---------------------------------------- 10-2-2. (CS)행복복지센터 */
 #wrap footer .foot_info .cs_center {}
 #wrap footer .foot_info .cs_center * {color:var(--color-light);}
 #wrap footer .foot_info .cs_center .cs_title {font-weight:var(--font-weight-semibold); margin-bottom:var(--spacing-20);}
