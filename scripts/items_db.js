@@ -82,7 +82,7 @@ const newDB = [
 },
 {
     id:3,
-    title:'티켓, 사진을 쏙! 나만의 작은 기억 도서관',
+    title:'책 사이에서 잃어버린 물건을 발견한다면?',
     img:'./images/new_item3.jpg',
     originPrice:'9,000',
     discount:'5%',

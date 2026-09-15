@@ -168,6 +168,10 @@ const best_swiper_func = new Swiper(best_swiper, {
             slidesPerView:3,
             spaceBetween:10,
         },
+        769:{
+            slidesPerView:3,
+            spaceBetween:10,
+        },
         1381:{
             slidesPerView:3,
             spaceBetween:20,
@@ -240,6 +244,10 @@ const new_swiper_func = new Swiper(new_swiper, {
             spaceBetween:10,
         },
         441:{
+            slidesPerView:3,
+            spaceBetween:10,
+        },
+        769:{
             slidesPerView:4,
             spaceBetween:10,
         },
@@ -295,7 +303,7 @@ const season_swiper_func = new Swiper(season_swiper, {
             slidesPerView:3,
             spaceBetween:10,
         },
-        441:{
+        769:{
             slidesPerView:3,
             spaceBetween:10,
         },
@@ -384,7 +392,7 @@ const gift_swiper_func = new Swiper(gift_swiper, {
             slidesPerView:2,
             spaceBetween:10,
         },
-        441:{
+        769:{
             slidesPerView:3,
             spaceBetween:10,
         },
