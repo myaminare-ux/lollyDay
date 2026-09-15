@@ -107,23 +107,23 @@ for (let i = 0; i<4; i++) {
     best_slide.classList.add('swiper-slide', 'best_slide');
     // ----------------------------------------------- HTML 연결
     best_slide.innerHTML = `
-    <a href="#" target="_blank" class="best_item">
-        <div class="item_top">
-            <span class="size_label">${bestDB[i].size}</span>
-            <img src="${bestDB[i].img}" alt="${bestDB[i].title}">
+    <div class="item_top">
+        <span class="size_label">${bestDB[i].size}</span>
+            <a href="#" class="item_img">
+                <img src="${bestDB[i].img}" alt="${bestDB[i].title}">
+            </a>
+            <button type="button" class="favorite_btn">
+                <img src="./images/favorite_items_icon2.png" alt="관심상품 등록">
+            </button>
+    </div>
+    <a href="#" class="item_btm">
+        <h3>${bestDB[i].title}</h3>
+        <del class="item_origin_price">${bestDB[i].originPrice.toLocaleString('ko-KR')}원</del>
+        <div class="sale_price">
+            <p class="sale">${bestDB[i].discount}</p>
+            <p class="price">${bestDB[i].salePrice.toLocaleString('ko-KR')}원</p>
         </div>
-        <div class="item_btm">
-            <h3>${bestDB[i].title}</h3>
-            <del class="item_origin_price">${bestDB[i].originPrice.toLocaleString('ko-KR')}원</del>
-            <div class="sale_price">
-                <p class="sale">${bestDB[i].discount}</p>
-                <p class="price">${bestDB[i].salePrice.toLocaleString('ko-KR')}원</p>
-            </div>
-        </div>
-    </a>
-    <button type="button" class="favorite_btn">
-        <img src="./images/favorite_items_icon2.png" alt="관심상품 등록">
-    </button>`;
+    </a>`;
 
     // 관심상품 등록 버튼 클릭 시 활성화 이미지 변경
     const favBtn = best_slide.querySelector('.favorite_btn');
@@ -186,22 +186,22 @@ for (let i = 0; i<newDB.length; i++) {
     const new_slide = document.createElement('div');
     new_slide.classList.add('swiper-slide', 'new_slide');
     new_slide.innerHTML = `
-    <a href="#" target="_blank" class="new_item">
-        <div class="item_top">
+    <div class="item_top">
+        <a href="#" class="item_img">
             <img src="${newDB[i].img}" alt="${newDB[i].title}">
+        </a>
+        <button type="button" class="favorite_btn">
+            <img src="./images/favorite_items_icon2.png" alt="관심상품 등록">
+        </button>
+    </div>
+    <a href="#" class="item_btm">
+        <h3>${newDB[i].title}</h3>
+        <del class="item_origin_price">${newDB[i].originPrice.toLocaleString('ko-KR')}원</del>
+        <div class="sale_price">
+            <p class="sale">${newDB[i].discount}</p>
+            <p class="price">${newDB[i].salePrice.toLocaleString('ko-KR')}원</p>
         </div>
-        <div class="item_btm">
-            <h3>${newDB[i].title}</h3>
-            <del class="item_origin_price">${newDB[i].originPrice.toLocaleString('ko-KR')}원</del>
-            <div class="sale_price">
-                <p class="sale">${newDB[i].discount}</p>
-                <p class="price">${newDB[i].salePrice.toLocaleString('ko-KR')}원</p>
-            </div>
-        </div>
-    </a>
-    <button type="button" class="favorite_btn">
-        <img src="./images/favorite_items_icon2.png" alt="관심상품 등록">
-    </button>`;
+    </a>`;
 
     // 관심상품 등록 버튼 클릭 시 활성화 이미지 변경
     const favBtn = new_slide.querySelector('.favorite_btn');
@@ -337,22 +337,22 @@ for (let i = 0; i<4; i++){
     gift_slide.classList.add('swiper-slide', 'gift_slide');
     // ----------------------------------------------- HTML 연결
     gift_slide.innerHTML = `
-    <a href="#" target="_blank" class="gift_item">
-        <div class="item_top">
+    <div class="item_top">
+        <a href="#" class="item_img">
             <img src="${giftDB[i].img}" alt="${giftDB[i].title}">
+        </a>
+        <button type="button" class="favorite_btn">
+            <img src="./images/favorite_items_icon2.png" alt="관심상품 등록">
+        </button>
+    </div>
+    <a href="#" class="item_btm">
+        <h3>${giftDB[i].title}</h3>
+        <del class="item_origin_price">${giftDB[i].originPrice.toLocaleString('ko-KR')}원</del>
+        <div class="sale_price">
+            <p class="sale">${giftDB[i].discount}</p>
+            <p class="price">${giftDB[i].salePrice.toLocaleString('ko-KR')}원</p>
         </div>
-        <div class="item_btm">
-            <h3>${giftDB[i].title}</h3>
-            <del class="item_origin_price">${giftDB[i].originPrice.toLocaleString('ko-KR')}원</del>
-            <div class="sale_price">
-                <p class="sale">${giftDB[i].discount}</p>
-                <p class="price">${giftDB[i].salePrice.toLocaleString('ko-KR')}원</p>
-            </div>
-        </div>
-    </a>
-    <button type="button" class="favorite_btn">
-        <img src="./images/favorite_items_icon2.png" alt="관심상품 등록">
-    </button>`;
+    </a>`;
 
     // 관심상품 등록 버튼 클릭 시 활성화 이미지 변경
     const favBtn2 = gift_slide.querySelector('.favorite_btn');

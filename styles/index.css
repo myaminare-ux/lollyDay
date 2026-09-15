@@ -220,7 +220,6 @@
 #wrap main .best .best_item_list {flex:1; position:relative; padding-bottom:50px;}
 #wrap main .best .best_item_list .swiper-wrapper {}
 #wrap main .best .best_item_list .swiper-wrapper .best_slide {position:relative; height:100%;}
-#wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item {height:100%;}
 #wrap main .best .best_item_list .swiper_control_wrap {
     position:absolute; left:50%; bottom:0; z-index:10;
     transform:translateX(-50%);
@@ -237,12 +236,12 @@
 #wrap main .best .best_item_list .swiper_control_wrap .swiper-button-next {background-image:url(../images/more_view_icon.png);}
 #wrap main .best .best_item_list .swiper_control_wrap .swiper-pagination-fraction {position:static; width:auto; font-size:var(--font-size-14);}
 /* ---------------------------------------- 3-2-1. top */
-#wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_top {
-    position:relative; 
+#wrap main .best .best_item_list .swiper-wrapper .best_slide .item_top {
+    position:relative; z-index:5;
     width:100%; height:440px; overflow:hidden;
     margin-bottom:var(--spacing-16);
 }
-#wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_top .size_label {
+#wrap main .best .best_item_list .swiper-wrapper .best_slide .item_top .size_label {
     width:57px; height:26px;
     display:flex; flex-flow:row nowrap; justify-content:center; align-items:center;
     background-color:var(--color-light); 
@@ -251,23 +250,24 @@
     position:absolute; right:20px; top:20px; z-index:10;
     font-size:var(--font-size-18);
 }
-#wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_top img {
+#wrap main .best .best_item_list .swiper-wrapper .best_slide .item_top .item_img img {}
+#wrap main .best .best_item_list .swiper-wrapper .best_slide .item_top img {
     width:100%; height:100%;
     object-fit:cover;
     transition:transform 0.5s;
 }
-#wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_top:hover img {transform:scale(1.1);}
+#wrap main .best .best_item_list .swiper-wrapper .best_slide .item_top:hover img {transform:scale(1.1);}
 /* ---------------------------------------- 3-2-2. btm */
-#wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_btm {}
-#wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_btm * {}
-#wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_btm h3{font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-8); line-height:var(--line-height-m);}
-#wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_btm .item_origin_price{font-size:var(--font-size-14); color:var(--color-inactive-v1);}
-#wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_btm .sale_price {display:flex; flex-flow:row nowrap; gap:var(--spacing-10); margin-top:14px;}
-#wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_btm .sale_price .sale{font-size:var(--font-size-17); font-weight:var(--font-weight-semibold); color:var(--color-primary);}
-#wrap main .best .best_item_list .swiper-wrapper .best_slide .best_item .item_btm .sale_price .price{font-size:var(--font-size-17); font-weight:var(--font-weight-semibold);}
+#wrap main .best .best_item_list .swiper-wrapper .best_slide .item_btm {}
+#wrap main .best .best_item_list .swiper-wrapper .best_slide .item_btm * {}
+#wrap main .best .best_item_list .swiper-wrapper .best_slide .item_btm h3{font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-8); line-height:var(--line-height-m);}
+#wrap main .best .best_item_list .swiper-wrapper .best_slide .item_btm .item_origin_price{font-size:var(--font-size-14); color:var(--color-inactive-v1);}
+#wrap main .best .best_item_list .swiper-wrapper .best_slide .item_btm .sale_price {display:flex; flex-flow:row nowrap; gap:var(--spacing-10); margin-top:14px;}
+#wrap main .best .best_item_list .swiper-wrapper .best_slide .item_btm .sale_price .sale{font-size:var(--font-size-17); font-weight:var(--font-weight-semibold); color:var(--color-primary);}
+#wrap main .best .best_item_list .swiper-wrapper .best_slide .item_btm .sale_price .price{font-size:var(--font-size-17); font-weight:var(--font-weight-semibold);}
 /* ---------------------------------------- 3-3. 관심상품 등록 */
 #wrap main .best .best_item_list .swiper-wrapper .best_slide .favorite_btn {
-    position:absolute; right:20px; top:384px;
+    position:absolute; right:20px; bottom:20px;
     width:36px; height:36px; z-index:10;
     display:flex; justify-content:center; align-items:center;
 }
@@ -288,19 +288,19 @@
 #wrap main .new .new_item_list {flex:1; width:100%;}
 #wrap main .new .new_item_list .swiper-wrapper {}
 #wrap main .new .new_item_list .swiper-wrapper .new_slide {}
-#wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item {}
 /* ---------------------------------------- 4-2-1. top */
-#wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item .item_top {width:100%; height:440px; overflow:hidden; position:relative;}
-#wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item .item_top img {width:100%; height:100%; object-fit:cover; transition:transform 0.5s;}
-#wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item .item_top img:hover {transform:scale(1.1);}
+#wrap main .new .new_item_list .swiper-wrapper .new_slide .item_top {width:100%; height:440px; overflow:hidden; position:relative;}
+#wrap main .new .new_item_list .swiper-wrapper .new_slide .item_top .item_img {width:100%; height:100%;}
+#wrap main .new .new_item_list .swiper-wrapper .new_slide .item_top .item_img img {width:100%; height:100%; object-fit:cover; transition:transform 0.5s;}
+#wrap main .new .new_item_list .swiper-wrapper .new_slide .item_top .item_img img:hover {transform:scale(1.1);}
 /* ---------------------------------------- 4-2-2. btm */
-#wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item .item_btm {margin-top:var(--spacing-16);}
-#wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item .item_btm h3 {font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-8); line-height:var(--line-height-m);}
-#wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item .item_btm .item_origin_price {font-size:var(--font-size-14); color:var(--color-inactive-v1);}
-#wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item .item_btm .sale_price {display:flex; flex-flow:row nowrap; gap:var(--spacing-10); margin-top:14px;}
-#wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item .item_btm .sale_price * {font-size:var(--font-size-17);}
-#wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item .item_btm .sale_price .sale { font-weight:var(--font-weight-semibold); color:var(--color-primary);}
-#wrap main .new .new_item_list .swiper-wrapper .new_slide .new_item .item_btm .sale_price .price { font-weight:var(--font-weight-semibold);}
+#wrap main .new .new_item_list .swiper-wrapper .new_slide .item_btm {margin-top:var(--spacing-16);}
+#wrap main .new .new_item_list .swiper-wrapper .new_slide .item_btm h3 {font-weight:var(--font-weight-medium); margin-bottom:var(--spacing-8); line-height:var(--line-height-m);}
+#wrap main .new .new_item_list .swiper-wrapper .new_slide .item_btm .item_origin_price {font-size:var(--font-size-14); color:var(--color-inactive-v1);}
+#wrap main .new .new_item_list .swiper-wrapper .new_slide .item_btm .sale_price {display:flex; flex-flow:row nowrap; gap:var(--spacing-10); margin-top:14px;}
+#wrap main .new .new_item_list .swiper-wrapper .new_slide .item_btm .sale_price * {font-size:var(--font-size-17);}
+#wrap main .new .new_item_list .swiper-wrapper .new_slide .item_btm .sale_price .sale { font-weight:var(--font-weight-semibold); color:var(--color-primary);}
+#wrap main .new .new_item_list .swiper-wrapper .new_slide .item_btm .sale_price .price { font-weight:var(--font-weight-semibold);}
 /* ---------------------------------------- 4-3. 관심상품 등록 */
 #wrap main .new .new_item_list .swiper-wrapper .new_slide .favorite_btn {
     position:absolute; right:20px; top:384px;
