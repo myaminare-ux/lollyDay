@@ -5,7 +5,7 @@
 }
 /* ---------------------------------------- 1행-헤더 */
 #wrap header {
-    max-width:var(--width-desk); height:65px;
+    max-width:var(--width-desk); height:auto;
     background-color:var(--color-sub-bg);
     position:fixed; left:50%; top:0; width:100%; z-index:999;
     transform:translateX(-50%);
@@ -71,7 +71,7 @@
 #wrap header nav .gnb > li a {
     color:var(--color-light);
     font-weight:var(--font-weight-medium);
-    white-space:nowrap;
+    word-break:keep-all;
 }
 #wrap header nav .gnb > li a:hover {color:var(--color-primary);}
 /* ---------------------------------------- 1-2-1. 서브 네비 컨테이너 */
@@ -132,7 +132,7 @@
 #wrap header .search_open .open_container .recent_search .no_data {font-size:var(--font-size-14); color:var(--color-sub-content);}
 /* ---------------------------------------- 1-4-4. 추천 검색어 */
 #wrap header .search_open .open_container .recommend_search {gap:var(--spacing-10); align-items:center;}
-#wrap header .search_open .open_container .recommend_search .title {font-weight:var(--font-weight-medium); line-height:1; margin-bottom:2px; white-space: nowrap;}
+#wrap header .search_open .open_container .recommend_search .title {font-weight:var(--font-weight-medium); line-height:1; margin-bottom:2px; word-break:keep-all;}
 #wrap header .search_open .open_container .recommend_search .recommend_list {display:flex; flex-flow:row wrap; gap:var(--spacing-6);}
 #wrap header .search_open .open_container .recommend_search .recommend_list li {
     padding:6px 10px; background-color:var(--color-main-bg); 
@@ -344,6 +344,9 @@
 #wrap main .season .season_content .season_big_img .img_text .img_desc {color:var(--color-sub-content-v2);}
 /* ---------------------------------------- 5-2-2. right */
 #wrap main .season .season_content .season_item_wrap {flex:1; min-width:0;}
+#wrap main .season .season_content .season_item_wrap .banner_text {display:none;}
+#wrap main .season .season_content .season_item_wrap .banner_text .banner_title {}
+#wrap main .season .season_content .season_item_wrap .banner_text .banner_desc {}
 /* ---------------------------------------- 5-2-2-1. top */
 #wrap main .season .season_content .season_item_wrap .season_banner {margin-bottom:var(--spacing-50);}
 #wrap main .season .season_content .season_item_wrap .season_banner img {width:100%;}
