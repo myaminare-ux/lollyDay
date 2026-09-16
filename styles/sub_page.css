@@ -1,0 +1,9 @@
+/* sub_page.css */
+/* ---------------------------------------- 2행~3행-배너 & 메인 */
+#wrap .sub {width:var(--width-desk);}
+/* ---------------------------------------- 2행-서브 페이지 배너 */
+#wrap .sub .sub_bnr {}
+#wrap .sub .sub_bnr .bnr_title_wrap {}
+#wrap .sub .sub_bnr .bnr_title_wrap .bnr_title {}
+#wrap .sub .sub_bnr .bnr_title_wrap .bnr_desc {}
+/* ---------------------------------------- 3행-메인(피그마 - 컨테이너) */
