@@ -131,3 +131,7 @@
     justify-content:center;
     align-items:center;
 }
+.flex-row-wrap {
+    display:flex;
+    flex-flow:row wrap;
+}

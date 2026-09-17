@@ -81,7 +81,7 @@ for(let i=0; i<totalcount; i++){
     subItemListUl.appendChild(li);
 }
 
-// 3-2-2. 필터 선택지
+// 3-2-2-1. 필터 옵션
 const filterSelect = document.querySelector('.filter_select');
 const selectBtn = filterSelect.querySelector('.select_btn');
 const optionBtns = filterSelect.querySelectorAll('.option_btn');
@@ -98,5 +98,15 @@ optionBtns.forEach(btn => {
         optionBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         filterSelect.classList.remove('on');
+    });
+});
+
+// 3-2-2-2. 상품 미리보기 필터 옵션
+const viewTypeBtns = document.querySelectorAll('.view_type_wrap button');
+
+viewTypeBtns.forEach(btn => {
+    btn.addEventListener('click',()=>{
+        viewTypeBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
     });
 });
