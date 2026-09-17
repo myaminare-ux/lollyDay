@@ -13,8 +13,10 @@
     --color-inactive-v1:#888; /* 비활성화 1 */
     --color-inactive-v2:#999; /* 비활성화2 */
     --color-inactive-v3:#616161; /* 비활성화3 - 서브 네비 */
+    --color-inactive-v4:#f6f6f6; /* 비활성화4 */
     --color-sub-content:#444; /* 세부내용 */
     --color-sub-content-v2:#d8d8d8; /* 세부내용 */
+    --color-border:#adadad; /* 스크롤 배경 */
     --color-scroll-bg:#d9d9d9; /* 스크롤 배경 */
     --color-scroll-bar:#a5a5a5; /* 스크롤 바 */
     --color-point:#ffc83b; /* 오롤리데이 포인트 노란색 */
@@ -34,7 +36,10 @@
     --font-size-22:1.375em;
     --font-size-23:1.438em;
     --font-size-24:1.5em;
+    --font-size-25:1.563em;
+    --font-size-26:1.625em;
     --font-size-32:2em;
+    --font-size-34:2.125em;
 
     /* 폰트 두께 */
     --font-weight-demilight:300;
@@ -57,6 +62,7 @@
     /* 모서리 둥글기 */
     --radius-xs:3px;
     --radius-m:20px;
+    --radius-ml:30px;
     --radius-l:50px;
 
     /* 간격 */
@@ -74,6 +80,7 @@
     --spacing-20:20px;
     --spacing-22:22px;
     --spacing-24:24px;
+    --spacing-25:25px;
     --spacing-26:26px;
     --spacing-30:30px;
     --spacing-40:40px;

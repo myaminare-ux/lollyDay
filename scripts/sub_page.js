@@ -1,5 +1,24 @@
 /* sub_page.js */
-// 서브 아이템 컨테이너 카테고리
+
+// 3-1-2. 카테고리
+const subTabList = document.querySelector('.sub_tab_list');
+
+subTabListDB.forEach((tab, index)=>{
+    const li = document.createElement('li');
+    const activeClass = index === 0 ? 'active' : '';
+    li.innerHTML = `
+    <button type="button" class="${activeClass}" data-id="${tab.id}">${tab.name}</button>
+    `;
+    subTabList.appendChild(li);
+})
+
+subTabList.addEventListener('click', (e)=>{
+    const btn = e.target.closest('button');
+    subTabList.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+})
+
+// 3-2-1. 서브 아이템 컨테이너 카테고리
 const conSubUl = document.querySelector('.con_sub_tab');
 
 conSubTabDB.forEach((tab, index)=>{
@@ -12,7 +31,7 @@ conSubTabDB.forEach((tab, index)=>{
 })
 
 conSubUl.addEventListener('click',(e)=>{
-    const btn = e.target.closeset('button');
+    const btn = e.target.closest('button');
     if (!btn) return;
     conSubUl.querySelectorAll('button').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
@@ -61,3 +80,23 @@ for(let i=0; i<totalcount; i++){
 
     subItemListUl.appendChild(li);
 }
+
+// 3-2-2. 필터 선택지
+const filterSelect = document.querySelector('.filter_select');
+const selectBtn = filterSelect.querySelector('.select_btn');
+const optionBtns = filterSelect.querySelectorAll('.option_btn');
+
+console.log(filterSelect, selectBtn, optionBtns);
+
+selectBtn.addEventListener('click',()=>{
+    filterSelect.classList.toggle('on');
+});
+
+optionBtns.forEach(btn => {
+    btn.addEventListener('click',()=>{
+        selectBtn.querySelector('span').textContent = btn.textContent;
+        optionBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        filterSelect.classList.remove('on');
+    });
+});

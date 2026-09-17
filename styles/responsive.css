@@ -18,7 +18,7 @@
     #wrap header nav .gnb > li .snb_nav_container .lnb {gap:0;}
     #wrap header nav .gnb > li .snb_nav_container .lnb > li .category {margin-bottom:var(--spacing-12); font-size:var(--spacing-12);}
     #wrap header nav .gnb > li .snb_nav_container .lnb > li .lnb_list {display:flex; flex-flow:column nowrap; gap:var(--spacing-14);}
-    #wrap header nav .gnb > li .snb_nav_container .lnb > li .lnb_list > li a {font-size:var(--font-size-10);}
+    #wrap header nav .gnb > li .snb_nav_container .lnb > li .lnb_list > li a {font-size:var(--font-size-10); white-space: nowrap;}
     /* 1-3. 메뉴 */
     #wrap header .menu_wrap {gap:var(--spacing-12); flex-shrink:0;}
     #wrap header .menu_wrap li .search_open_btn {width:24px; height:24px;}

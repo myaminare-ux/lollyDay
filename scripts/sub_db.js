@@ -1,5 +1,13 @@
 /* sub_db.js */
-// 서브 아이템 컨테이너 카테고리
+
+// 3-1-2. 카테고리
+const subTabListDB = [
+    { id:'daily', name:'일일' },
+    { id:'weekly', name:'주간' },
+    { id:'monthly', name:'월간' },
+]
+
+// 3-2-1. 서브 아이템 컨테이너 카테고리
 const conSubTabDB = [
     {id:'all', name:'전체',},
     {id:'planner', name:'다이어리 & 플래너',},
