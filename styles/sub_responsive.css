@@ -1,1 +1,82 @@
 /* sub_responsive.css */
+/* ------------------------------------------------------ 테블릿 */
+@media screen and (max-width:1380px) {
+    /* 2행~3행-배너 & 메인 */
+    #wrap .sub {width:100%;}
+    /* 2행-서브 페이지 배너 */
+    #wrap .sub .sub_bnr .bnr_title_wrap {right:60px; bottom:36px;}
+    #wrap .sub .sub_bnr .bnr_title_wrap .bnr_title {font-size:var(--font-size-18);}
+    #wrap .sub .sub_bnr .bnr_title_wrap .bnr_desc {font-size:var(--font-size-22);}
+    /* 3행-메인(피그마 - 컨테이너) */
+    #wrap .sub .sub_wrap {padding:50px 60px 120px;}
+    /* 3-1. left */
+    /* 3-1-1. 타이틀 */
+    #wrap .sub .sub_wrap .sub_header h2 {font-size:var(--font-size-23);}
+    /* 3-1-2. 카테고리 */
+    #wrap .sub .sub_wrap .sub_header .sub_tab_list li button {font-size:var(--font-size-14);}
+    #wrap .sub .sub_wrap .sub_header .sub_tab_list li button.active {font-size:var(--font-size-16);}
+    /* 3-2. right */
+    #wrap .sub .sub_wrap .sub_container {width:1083px;}
+    /* 3-2-1. 서브 타이틀 & 카테고리 */
+    #wrap .sub .sub_wrap .sub_container .con_sub_title_wrap h3 {font-size:var(--font-size-20);}
+    #wrap .sub .sub_wrap .sub_container .con_sub_title_wrap .con_sub_tab li button {font-size:var(--font-size-12);}
+    /* 3-2-2. 필터 */
+    #wrap .sub .sub_wrap .sub_container .filter_wrap .date {font-size:var(--font-size-12);}
+    /* 3-2-2-1. 필터 옵션 */
+    #wrap .sub .sub_wrap .sub_container .filter_wrap .fliter_right .filter_select {width:146px;}
+    #wrap .sub .sub_wrap .sub_container .filter_wrap .fliter_right .filter_select .select_btn::after {width:10px; height:10px;}
+    #wrap .sub .sub_wrap .sub_container .filter_wrap .fliter_right .filter_select .select_btn span {font-size:var(--font-size-10);}
+    #wrap .sub .sub_wrap .sub_container .filter_wrap .fliter_right .filter_select .select_list li .option_btn {font-size:var(--font-size-10);}
+    /* 3-2-2-2. 상품 미리보기 필터 옵션 */
+    #wrap .sub .sub_wrap .sub_container .filter_wrap .fliter_right .view_type_wrap {height:26px;}
+    #wrap .sub .sub_wrap .sub_container .filter_wrap .fliter_right .view_type_wrap button {width:24px; height:24px; background-size:12px 12px;}
+    /* 3-2-3. 상품 랩 */
+    /* 3-2-3-1. 상품 리스트 */
+    /* 3-2-3-1-1. (위) 라벨, 이미지, 관심 상품 등록 */
+    #wrap .sub .sub_wrap .sub_container .sub_item_wrap .sub_item_list li .item_top {width:100%}
+    #wrap .sub .sub_wrap .sub_container .sub_item_wrap .sub_item_list li .item_top .size_label {width:45px; height:18px; right:10px; top:10px; font-size:var(--font-size-14);}
+    #wrap .sub .sub_wrap .sub_container .sub_item_wrap .sub_item_list li .item_top .item_img {height:274px;}
+    #wrap .sub .sub_wrap .sub_container .sub_item_wrap .sub_item_list li .item_top .favorite_btn {right:10px; bottom:10px; width:26px; height:26px;}
+    /* 3-2-3-1-2. (아래) 상품명, 가격 */
+    #wrap .sub .sub_wrap .sub_container .sub_item_wrap .sub_item_list li .item_btm h3 {font-size:var(--font-size-14);}
+    #wrap .sub .sub_wrap .sub_container .sub_item_wrap .sub_item_list li .item_btm .item_origin_price {font-size:var(--font-size-12);}
+    #wrap .sub .sub_wrap .sub_container .sub_item_wrap .sub_item_list li .item_btm .sale_price * {font-size:var(--font-size-15);}
+    /* 3-2-3-2. 더보기 버튼 */
+    #wrap .sub .sub_wrap .sub_container .sub_item_wrap .more_btn {margin:0 auto; padding:10px 42px; width:151px; height:35px;}
+    #wrap .sub .sub_wrap .sub_container .sub_item_wrap .more_btn button {font-size:var(--font-size-12);}
+}
+
+/* ------------------------------------------------------ 모바일 */
+@media screen and (max-width:970px) {/* 패딩 60, 모바일 폰트 크기 따라가기(너무 작으면 수정) */
+    /* 2행~3행-배너 & 메인 */
+    #wrap .sub {width:100%;}
+    /* 2행-서브 페이지 배너 */
+    #wrap .sub .sub_bnr {height:250px;}
+    #wrap .sub .sub_bnr .bnr_title_wrap {right:60px; bottom:26px;}
+    #wrap .sub .sub_bnr .bnr_title_wrap .bnr_title {font-size:var(--font-size-14);}
+    #wrap .sub .sub_bnr .bnr_title_wrap .bnr_desc {font-size:var(--font-size-18);}
+    /* 3행-메인(피그마 - 컨테이너) */
+    #wrap .sub .sub_wrap {padding:30px 60px 60px; flex-flow:column nowrap; justify-content:center; align-items:center; gap:var(--spacing-20);}
+    /* 3-1. left */
+    #wrap .sub .sub_wrap .sub_header {gap:var(--spacing-20); /* margin-bottom:var(--spacing-15); */}
+    /* 3-1-1. 타이틀 */
+    #wrap .sub .sub_wrap .sub_header h2 {font-size:var(--font-size-24); text-align:center;}
+    /* 3-1-2. 카테고리 */
+    #wrap .sub .sub_wrap .sub_header .sub_tab_list {flex-flow:row nowrap;}
+    #wrap .sub .sub_wrap .sub_header .sub_tab_list li button {font-size:var(--font-size-10);}
+    #wrap .sub .sub_wrap .sub_header .sub_tab_list li button.active {font-size:var(--font-size-12);}
+    /* 3-2. right */
+    #wrap .sub .sub_wrap .sub_container {width:100%; gap:var(--spacing-15);}
+    /* 3-2-1. 서브 타이틀 & 카테고리 */
+    #wrap .sub .sub_wrap .sub_container .con_sub_title_wrap {gap:var(--spacing-16);}
+    #wrap .sub .sub_wrap .sub_container .con_sub_title_wrap h3 {font-size:var(--font-size-18);}
+    #wrap .sub .sub_wrap .sub_container .con_sub_title_wrap .con_sub_tab li button {font-size:var(--font-size-10);}
+    /* 3-2-2. 필터 */
+    #wrap .sub .sub_wrap .sub_container .filter_wrap .date {font-size:var(--font-size-10);}
+    /* 3-2-2-1. 필터 옵션 */
+    #wrap .sub .sub_wrap .sub_container .filter_wrap .fliter_right .filter_select {width:146px;}
+    #wrap .sub .sub_wrap .sub_container .filter_wrap .fliter_right .filter_select .select_btn {padding:7px 10px;}
+}
+
+/* ------------------------------------------------------ 모바일 */
+@media screen and (max-width:768px) {}
