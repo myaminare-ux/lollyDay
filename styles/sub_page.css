@@ -1,10 +1,19 @@
 /* sub_page.css */
+#wrap {overflow:hidden;}
 /* #wrap header .mobaile_sub_nav {height:100vh;} */
+/* ---------------------------------------- 0. 모바일용 서브 네비 */
+#wrap header .mobaile_sub_nav {
+    background-color:var(--color-light); padding-top:var(--spacing-20);
+    position:fixed; left:-200%; top:0; width:100%; height:100vh; z-index:999;
+    transition:left 0.3s ease; box-shadow:0 13px 22px 0 rgba(0, 0, 0, 0.07);
+}
+#wrap header .mobaile_sub_nav.active {left:0;}
+#wrap header .mobaile_sub_nav .m_sub {height:100%;}
 /* ---------------------------------------- 2행~3행-배너 & 메인 */
 #wrap .sub {width:var(--width-desk);}
 /* ---------------------------------------- 2행-서브 페이지 배너 */
 #wrap .sub .sub_bnr {
-    width:100%; height:320px;/*  padding-top:65px; */
+    max-width:var(--width-desk); width:100%; height:320px;/*  padding-top:65px; */
     background-image:url(../images/sub_banner.jpg);
     background-size:cover;
     background-position:center;
@@ -16,7 +25,7 @@
 #wrap .sub .sub_bnr .bnr_title_wrap .bnr_title {font-size:var(--font-size-20);}
 #wrap .sub .sub_bnr .bnr_title_wrap .bnr_desc {font-size:var(--font-size-25);}
 /* ---------------------------------------- 3행-메인(피그마 - 컨테이너) */
-#wrap .sub .sub_wrap {width:100%; margin:0 auto; padding:50px 270px 120px; gap:95px;}
+#wrap .sub .sub_wrap {max-width:var(--width-desk); width:100%; margin:0 auto; padding:50px 270px 120px; gap:95px;}
 /* ---------------------------------------- 3-1. left */
 #wrap .sub .sub_wrap .sub_header {gap:var(--spacing-40);}
 /* ---------------------------------------- 3-1-1. 타이틀 */
@@ -90,7 +99,7 @@
 #wrap .sub .sub_wrap .sub_container .sub_item_wrap .sub_item_list {width:100%; column-gap:var(--spacing-20); row-gap:var(--spacing-60); margin-bottom:var(--spacing-60);}
 #wrap .sub .sub_wrap .sub_container .sub_item_wrap .sub_item_list li {width:calc((100% - (20px * 3)) / 4); display:flex; flex-flow:column nowrap; gap:var(--spacing-16);}
 /* ---------------------------------------- 3-2-3-1-1. (위) 라벨, 이미지, 관심 상품 등록 */
-#wrap .sub .sub_wrap .sub_container .sub_item_wrap .sub_item_list li .item_top {width:285px; position:relative;}
+#wrap .sub .sub_wrap .sub_container .sub_item_wrap .sub_item_list li .item_top {width:100%; position:relative;}
 #wrap .sub .sub_wrap .sub_container .sub_item_wrap .sub_item_list li .item_top .size_label {
     width:57px; height:26px;
     display:flex; flex-flow:row nowrap; justify-content:center; align-items:center;
