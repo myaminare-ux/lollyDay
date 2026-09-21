@@ -143,6 +143,7 @@ html, body {width: 100%; max-width: 100%;}
 }
 #wrap header .search_open .open_container .recommend_search .recommend_list li a {font-size:var(--font-size-12); text-align:center;}
 /* ---------------------------------------- 2행-메인 광고 배너 */
+#wrap main {max-width:var(--width-desk);}
 /* #wrap main .main_banner {
     background-image:url(../images/main_banner.jpg);
     background-size:cover;
@@ -544,7 +545,7 @@ html, body {width: 100%; max-width: 100%;}
 #wrap main .donation_banner .ad_wrap .ad_img {}
 #wrap main .donation_banner .ad_wrap .ad_img img {width:100%;}
 /* ---------------------------------------- 10행-푸터 */
-#wrap footer {background-color:var(--color-sub-bg); width:var(--width-desk);}
+#wrap footer {background-color:var(--color-sub-bg); max-width:var(--width-desk);}
 #wrap footer .foot_wrap {width:var(--width-container); padding:60px 0 70px; margin:0 auto;}
 /* ---------------------------------------- 10-1. (위) 이용약관 등 */
 #wrap footer .foot_menu {gap:var(--spacing-20); margin-bottom:var(--spacing-50);}

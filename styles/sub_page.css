@@ -120,3 +120,6 @@
 #wrap .sub .sub_wrap .sub_container .sub_item_wrap .more_btn {margin:0 auto; padding:12px 45px; width:168px; height:41px; border:1.5px solid var(--color-border); border-radius:var(--radius-xs); transition:background-color 0.4s, border 0.4s;}
 #wrap .sub .sub_wrap .sub_container .sub_item_wrap .more_btn button {font-size:var(--font-size-14); font-weight:var(--font-weight-medium);}
 #wrap .sub .sub_wrap .sub_container .sub_item_wrap .more_btn:hover {background-color:rgba(255, 92, 43, 0.1); border:1.5px solid var(--color-primary);}
+/* ---------------------------------------- 3-2-3-2. 푸터 */
+#wrap footer {background-color:var(--color-sub-bg); width:var(--width-desk);}
+#wrap footer .foot_wrap {width:var(--width-container); padding:60px 0 70px; margin:0 auto;}
