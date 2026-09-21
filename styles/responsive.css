@@ -106,7 +106,7 @@
     /* 5-2. (아래) 상품 */
     #wrap main .season .season_content {gap:var(--spacing-10); width:100%;}
     /* 5-2-1. left */
-    #wrap main .season .season_content .season_big_img {width:50%; height:650px;}
+    #wrap main .season .season_content .season_big_img {width:50%; height:auto;}
     #wrap main .season .season_content .season_big_img .season_more_btn {font-size:var(--font-size-12); padding:10px 14px 10px 20px;}
     #wrap main .season .season_content .season_big_img .season_more_btn img {width:14px;}
     #wrap main .season .season_content .season_big_img .img_text {left:30px; bottom:30px;}
@@ -209,7 +209,8 @@
     #wrap main .donation_banner .ad_wrap .ad_content .ad_desc {font-size:var(--font-size-12);}
     /* 9-2. (오른쪽) 기부 이미지 */
     /* 10행-푸터 */
-    #wrap footer .foot_wrap {width:100%; padding:40px 60px 50px;}
+    #wrap footer {max-width:100%;}
+    #wrap footer .foot_wrap {max-width:100%; width:100%; padding:40px 60px 50px;}
     /* 10-1. (위) 이용약관 등 */
     #wrap footer .foot_menu li a {font-size:var(--font-size-16);}
     /* 10-2. (아래) 회사 sns, 행복복지센터, 은행, 회사 정보 */
@@ -266,6 +267,7 @@
     /* 1-4-2. 검색창 입력바 */
     #wrap header .search_open .open_container .search_fom {padding:12px 20px;}
     #wrap header .search_open .open_container .search_fom .submit_btn {width:24px;}
+    #wrap header .search_open .open_container .search_fom #user_search {font-size:var(--font-size-14);}
     /* 1-4-3. 최근 검색어 */
     #wrap header .search_open .open_container .recent_search {margin-bottom:var(--spacing-16);}
     #wrap header .search_open .open_container .recent_search .title {font-size:var(--font-size-12);}
@@ -423,7 +425,8 @@
     #wrap main .donation_banner .ad_wrap .ad_content .ad_desc {font-size:var(--font-size-10);}
     /* 9-2. (오른쪽) 기부 이미지 */
     /* 10행-푸터 */
-    #wrap footer .foot_wrap {padding:40px 60px 50px;}
+    #wrap footer {max-width:100%;}
+    #wrap footer .foot_wrap {max-width:100%; width:100%; padding:40px 60px 50px;}
     /* 10-1. (위) 이용약관 등 */
     #wrap footer .foot_menu {justify-content:space-between; margin-bottom:var(--spacing-30);}
     #wrap footer .foot_menu li a {font-size:var(--font-size-12);}
@@ -476,6 +479,7 @@
     /* 1-4-2. 검색창 입력바 */
     #wrap header .search_open .open_container .search_fom {padding:12px 20px;}
     #wrap header .search_open .open_container .search_fom .submit_btn {width:24px;}
+    #wrap header .search_open .open_container .search_fom #user_search {font-size:var(--font-size-12);}
     /* 1-4-3. 최근 검색어 */
     #wrap header .search_open .open_container .recent_search {margin-bottom:var(--spacing-16);}
     #wrap header .search_open .open_container .recent_search .title {font-size:var(--font-size-12);}

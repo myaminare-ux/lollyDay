@@ -16,7 +16,7 @@
 #wrap .sub .sub_bnr .bnr_title_wrap .bnr_title {font-size:var(--font-size-20);}
 #wrap .sub .sub_bnr .bnr_title_wrap .bnr_desc {font-size:var(--font-size-25);}
 /* ---------------------------------------- 3행-메인(피그마 - 컨테이너) */
-#wrap .sub .sub_wrap {width:100%; padding:50px 270px 120px;}
+#wrap .sub .sub_wrap {width:100%; margin:0 auto; padding:50px 270px 120px; gap:95px;}
 /* ---------------------------------------- 3-1. left */
 #wrap .sub .sub_wrap .sub_header {gap:var(--spacing-40);}
 /* ---------------------------------------- 3-1-1. 타이틀 */
@@ -35,7 +35,7 @@
 #wrap .sub .sub_wrap .sub_header .sub_tab_list li button:hover::after {opacity:1; transform:scale(1);}
 #wrap .sub .sub_wrap .sub_header .sub_tab_list li button.active {font-size:var(--font-size-20); font-weight:var(--font-weight-medium); color:var(--color-dark);}
 /* ---------------------------------------- 3-2. right */
-#wrap .sub .sub_wrap .sub_container {width:1203px; gap:var(--spacing-20);}
+#wrap .sub .sub_wrap .sub_container {width:100%; gap:var(--spacing-20);}
 /* ---------------------------------------- 3-2-1. 서브 타이틀 & 카테고리 */
 #wrap .sub .sub_wrap .sub_container .con_sub_title_wrap {width:100%; gap:var(--spacing-25);}
 #wrap .sub .sub_wrap .sub_container .con_sub_title_wrap h3 {font-size:var(--font-size-26); font-weight:var(--font-weight-semibold);}
@@ -44,7 +44,7 @@
 #wrap .sub .sub_wrap .sub_container .con_sub_title_wrap .con_sub_tab li button {padding:8px 14px; background-color:var(--color-inactive-v4); border-radius:var(--radius-ml);}
 #wrap .sub .sub_wrap .sub_container .con_sub_title_wrap .con_sub_tab li button.active {background-color:rgba(255, 92, 43, 0.1); border:2px solid var(--color-primary);}
 /* ---------------------------------------- 3-2-2. 필터 */
-#wrap .sub .sub_wrap .sub_container .filter_wrap {width:100%; padding:14px 0;}
+#wrap .sub .sub_wrap .sub_container .filter_wrap {width:100%; padding:14px 0; align-items:center;}
 #wrap .sub .sub_wrap .sub_container .filter_wrap .date {font-size:var(--font-size-14); font-weight:var(--font-weight-medium);}
 #wrap .sub .sub_wrap .sub_container .filter_wrap .fliter_right {gap:var(--spacing-10); align-items:center;}
 /* ---------------------------------------- 3-2-2-1. 필터 옵션 */

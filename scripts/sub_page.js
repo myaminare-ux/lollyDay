@@ -56,6 +56,47 @@ closeBtn.addEventListener('click', ()=>{
     mobalieSnbNav.classList.remove('active');
 })
 
+// 검색창
+// 검색창 추천 리스트
+const recommendList = document.querySelector('.recommend_list');
+
+for (let i=0; i<recommendDB.length; i++){
+    const data = recommendDB[i];
+
+    recommendList.innerHTML += `
+    <li>
+        <a href="${data.url}">${data.title}</a>
+    </li>`;
+};
+
+// 검색창 클릭 시 열고 닫기 버튼 누르면 닫힘
+const searchOpenBtn = document.querySelector('.search_open_btn');
+const searchOpen = document.querySelector('.search_open');
+const searchCloseBtn = document.querySelector('.search_close_btn button');
+
+searchOpenBtn.addEventListener('click',()=>{
+    searchOpen.classList.add('active');
+});
+searchCloseBtn.addEventListener('click',()=>{
+    searchOpen.classList.remove('active');
+});
+
+// 네비게이션 all 호버 시 검색창 없어지게 하기
+const navAll = document.querySelector('.gnb .gnb_all');
+navAll.addEventListener('mouseenter',()=>{
+    searchOpen.classList.remove('active');
+});
+
+// CTA 버튼
+const topBtn = document.querySelector('.top_btn_png');
+
+topBtn.addEventListener('click',()=>{
+    window.scrollTo({
+        top:0,
+        behavior:'smooth',
+    });
+});
+
 // 3-1-2. 카테고리
 const subTabList = document.querySelector('.sub_tab_list');
 
