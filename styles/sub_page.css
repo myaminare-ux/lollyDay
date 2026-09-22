@@ -1,5 +1,5 @@
 /* sub_page.css */
-#wrap {overflow:hidden;}
+#wrap {max-width:var(--width-desk); width:100%;}
 /* #wrap header .mobaile_sub_nav {height:100vh;} */
 /* ---------------------------------------- 0. 모바일용 서브 네비 */
 #wrap header .mobaile_sub_nav {
@@ -10,7 +10,7 @@
 #wrap header .mobaile_sub_nav.active {left:0;}
 #wrap header .mobaile_sub_nav .m_sub {height:100%;}
 /* ---------------------------------------- 2행~3행-배너 & 메인 */
-#wrap .sub {width:var(--width-desk);}
+#wrap .sub {max-width:var(--width-desk);}
 /* ---------------------------------------- 2행-서브 페이지 배너 */
 #wrap .sub .sub_bnr {
     max-width:var(--width-desk); width:100%; height:320px;/*  padding-top:65px; */
@@ -130,5 +130,5 @@
 #wrap .sub .sub_wrap .sub_container .sub_item_wrap .more_btn button {font-size:var(--font-size-14); font-weight:var(--font-weight-medium);}
 #wrap .sub .sub_wrap .sub_container .sub_item_wrap .more_btn:hover {background-color:rgba(255, 92, 43, 0.1); border:1.5px solid var(--color-primary);}
 /* ---------------------------------------- 3-2-3-2. 푸터 */
-#wrap footer {background-color:var(--color-sub-bg); width:var(--width-desk);}
+#wrap footer {background-color:var(--color-sub-bg); max-width:var(--width-desk);}
 #wrap footer .foot_wrap {width:var(--width-container); padding:60px 0 70px; margin:0 auto;}

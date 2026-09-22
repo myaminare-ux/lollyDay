@@ -1,6 +1,7 @@
 /* sub_responsive.css */
 /* ------------------------------------------------------ 테블릿 */
 @media screen and (max-width:1380px) {
+    #wrap {max-width:100%;}
     /* 2행~3행-배너 & 메인 */
     #wrap .sub {width:100%;}
     /* 2행-서브 페이지 배너 */
