@@ -109,14 +109,14 @@ for (let i = 0; i<4; i++) {
     best_slide.innerHTML = `
     <div class="item_top">
         <span class="size_label">${bestDB[i].size}</span>
-            <a href="#" class="item_img">
+            <a href="./item_buy.html" class="item_img">
                 <img src="${bestDB[i].img}" alt="${bestDB[i].title}">
             </a>
             <button type="button" class="favorite_btn">
                 <img src="./images/favorite_items_icon2.png" alt="관심상품 등록">
             </button>
     </div>
-    <a href="#" class="item_btm">
+    <a href="./item_buy.html" class="item_btm">
         <h3>${bestDB[i].title}</h3>
         <del class="item_origin_price">${bestDB[i].originPrice.toLocaleString('ko-KR')}원</del>
         <div class="sale_price">
