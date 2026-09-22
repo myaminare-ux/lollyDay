@@ -115,7 +115,7 @@ for (let i = 0; i<4; i++) {
             <button type="button" class="favorite_btn">
                 <img src="./images/favorite_items_icon2.png" alt="관심상품 등록">
             </button>
-    </div>
+    </div> 
     <a href="./item_buy.html" class="item_btm">
         <h3>${bestDB[i].title}</h3>
         <del class="item_origin_price">${bestDB[i].originPrice.toLocaleString('ko-KR')}원</del>
